@@ -12,7 +12,7 @@
 		3051F34C4ADCCB45901987F5C5B61053 /* STCPayInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 522154EC8CA2678021DB353368AD7C9E /* STCPayInfoModel.m */; };
 		3BB3CBF9C78C272A80AE39CBD246F7DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		4524791A2A41CD4A02D12E4149F4501D /* WeixinApiManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D80BE6A4B1382E87A6393EDD9942328C /* WeixinApiManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4737499DBF3D9248B31367E5563A729B /* STCPayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 968B08A8D8789073543747DC88652CB4 /* STCPayManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4737499DBF3D9248B31367E5563A729B /* STCPayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 968B08A8D8789073543747DC88652CB4 /* STCPayManager.h */; settings = {ATTRIBUTES = (Project, Public, ); }; };
 		4778D85C857AAD785D732E6532D42655 /* STCPayWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF12DAC802E3243311B8DE9D9C414FC /* STCPayWebViewController.m */; };
 		563606697DD0D3D7A31C8C487413EC0D /* STCPayInfoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D3045DA341AE5BE64BF6C78C1FFED1 /* STCPayInfoModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		700245FFDCA3A16E5128728804BF3909 /* STCThirdSDKManager.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDE92E86C7477655223C3C1304D82BC /* STCThirdSDKManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -370,8 +370,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				563606697DD0D3D7A31C8C487413EC0D /* STCPayInfoModel.h in Headers */,
 				4737499DBF3D9248B31367E5563A729B /* STCPayManager.h in Headers */,
+				563606697DD0D3D7A31C8C487413EC0D /* STCPayInfoModel.h in Headers */,
 				2CC2241C6C43612D924AA31C4189C81E /* STCPayWebViewController.h in Headers */,
 				700245FFDCA3A16E5128728804BF3909 /* STCThirdSDKManager.h in Headers */,
 				E28892B9D3152CE08391585004FFC191 /* STCWKWebViewPanelManager.h in Headers */,
