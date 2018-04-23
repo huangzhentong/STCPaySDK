@@ -1,0 +1,1 @@
+../../../../../STCPaySDK/Classes/Manager/STCThirdSDKManager.h

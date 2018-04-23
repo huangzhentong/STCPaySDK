@@ -1,0 +1,1 @@
+../../../../../STCPaySDK/Classes/Model/STCPayInfoModel.h

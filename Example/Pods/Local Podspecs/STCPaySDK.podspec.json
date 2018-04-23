@@ -1,0 +1,35 @@
+{
+  "name": "STCPaySDK",
+  "version": "0.1.0",
+  "summary": "A short description of STCPaySDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhentong.huang/STCPaySDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhentong.huang": "181310067@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zhentong.huang/STCPaySDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "STCPaySDK/Classes/**/*",
+  "resource_bundles": {
+    "STCPaySDK": [
+      "STCPaySDK/Assets/Res.budnle"
+    ]
+  },
+  "dependencies": {
+    "WechatOpenSDK": [
+
+    ],
+    "AlipaySDK_MI": [
+
+    ]
+  }
+}
