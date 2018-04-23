@@ -42,6 +42,6 @@ TODO: Add long description of the pod here.
     # "dependencies": {
     # "WechatOpenSDK": [ ]
     #  }
-    s.dependency  'WechatOpenSDK','AlipaySDK_MI'
-# s.dependency 'AlipaySDK_MI'
+    s.dependency  'WechatOpenSDK'
+    s.dependency 'AlipaySDK_MI'
 end
