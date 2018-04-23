@@ -23,9 +23,9 @@ TODO: Add long description of the pod here.
 
   s.homepage         = 'https://github.com/zhentong.huang/STCPaySDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT' }
   s.author           = { 'zhentong.huang' => '181310067@qq.com' }
-  s.source           = { :git => 'https://github.com/zhentong.huang/STCPaySDK.git', :tag => s.version.to_s }
+  s.source           = { :git => '/Users/kt-stc08/Desktop/STCPaySDK/STCPaySDK', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
