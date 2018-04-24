@@ -8,7 +8,7 @@
 #import "STCPayManager.h"
 #import "STCPayWebViewController.h"
 #import "WeixinApiManager.h"
-#import <AlipaySDK_MI/AlipaySDK/AlipaySDK.h>
+#import <AlipaySDK/AlipaySDK.h>
 @implementation STCPayManager
 
 +(instancetype)shareInstance
