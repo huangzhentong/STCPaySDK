@@ -35,10 +35,10 @@ TODO: Add long description of the pod here.
 #s.resource_bundles = {
 #  'STCPaySDK' => ['STCPaySDK/Assets/Res.budnle']
 # }
-
-   s.public_header_files = 'Pod/Classes/**/*.h'
+ 
+   s.public_header_files = 'STCPaySDK/Classes/**/*.h','STCPaySDK/Classes/**/**/*.h'
     s.frameworks            = 'SystemConfiguration', 'CoreTelephony', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation','CFNetwork', 'CoreMotion'
-    s.libraries             = 'z', 'c++'', 'sqlite3'
+    s.libraries             = 'z', 'c++', 'sqlite3'
     s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
   # s.dependency 'AFNetworking', '~> 2.3'
     # "dependencies": {
