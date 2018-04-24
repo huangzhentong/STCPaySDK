@@ -199,7 +199,15 @@
     }
     else
     {
-         [self.navigationController popViewControllerAnimated:YES];
+        if(self.navigationController.childViewControllers.count == 1)
+        {
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+        else
+        {
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+        
     }
     
 }
