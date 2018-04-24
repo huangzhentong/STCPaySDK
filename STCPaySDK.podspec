@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT' }
   s.author           = { 'zhentong.huang' => '181310067@qq.com' }
-  s.source           = { :git => '/Users/kt-stc08/Desktop/STCPaySDK/STCPaySDK', :tag => s.version.to_s }
+  s.source           = { :git => '/Users/kt-stc08/Desktop/STCPaySDK/STCPaySDK', :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
@@ -36,8 +36,10 @@ TODO: Add long description of the pod here.
 #  'STCPaySDK' => ['STCPaySDK/Assets/Res.budnle']
 # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.public_header_files = 'Pod/Classes/**/*.h'
+    s.frameworks            = 'SystemConfiguration', 'CoreTelephony', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation','CFNetwork', 'CoreMotion'
+    s.libraries             = 'z', 'c++'', 'sqlite3'
+    s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
   # s.dependency 'AFNetworking', '~> 2.3'
     # "dependencies": {
     # "WechatOpenSDK": [ ]
