@@ -227,6 +227,11 @@
     
     [STCThirdSDKManager disposePayURL:string withPayComplete:^(NSError *error,NSString *url) {
         
+        if(error == nil)
+        {
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+        }
+        
     }];
     //判断是否包涵支付信息
    
@@ -238,15 +243,15 @@
     
 }
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
-    [STCWKWebViewPanelManager presentAlertOnController:self.view.window.rootViewController title:@"" message:message handler:completionHandler];
+    [STCWKWebViewPanelManager presentAlertOnController:self title:@"" message:message handler:completionHandler];
 }
 
 - (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler {
-    [STCWKWebViewPanelManager presentConfirmOnController:self.view.window.rootViewController title:@"" message:message handler:completionHandler];
+    [STCWKWebViewPanelManager presentConfirmOnController:self title:@"" message:message handler:completionHandler];
 }
 
 - (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(nullable NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * __nullable result))completionHandler {
-    [STCWKWebViewPanelManager presentPromptOnController:self.view.window.rootViewController title:@"" message:prompt defaultText:defaultText handler:completionHandler];
+    [STCWKWebViewPanelManager presentPromptOnController:self title:@"" message:prompt defaultText:defaultText handler:completionHandler];
 }
 
 

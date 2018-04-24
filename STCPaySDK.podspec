@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT' }
   s.author           = { 'zhentong.huang' => '181310067@qq.com' }
-  s.source           = { :git => '/Users/kt-stc08/Desktop/STCPaySDK/STCPaySDK', :tag => s.version }
+  s.source           = { :git => 'https://dev365.keytop.cn/bitbucket/projects/STCPAYS/repos/stcpaysdk/browse.git', :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
@@ -44,7 +44,7 @@ TODO: Add long description of the pod here.
     # "dependencies": {
     # "WechatOpenSDK": [ ]
     #  }
-    s.ios.vendored_libraries = 'STCPaySDK/Classes/**/**/*.{a}',
+    s.ios.vendored_libraries = 'STCPaySDK/Classes/ThirdSDK/**/*.{a}',
     s.ios.vendored_frameworks = 'STCPaySDK/Classes/**/**/*.{framework}'
 
 
