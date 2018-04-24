@@ -25,12 +25,12 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT' }
   s.author           = { 'zhentong.huang' => '181310067@qq.com' }
-  s.source           = { :git => 'https://dev365.keytop.cn/bitbucket/projects/STCPAYS/repos/stcpaysdk/browse.git', :tag => s.version }
+  s.source           = { :git => 'https://huangzhentong@dev365.keytop.cn/bitbucket/scm/stcpays/stcpaysdk.git', :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'STCPaySDK/Classes/**/*'
+  s.source_files = 'STCPaySDK/Classes/**/*','STCPaySDK/Classes/**/**/*'
   s.resources = "STCPaySDK/Assets/Res.bundle","STCPaySDK/**/**/**/*.bundle"
 #s.resource_bundles = {
 #  'STCPaySDK' => ['STCPaySDK/Assets/Res.budnle']
