@@ -44,6 +44,8 @@ TODO: Add long description of the pod here.
     # "dependencies": {
     # "WechatOpenSDK": [ ]
     #  }
-    s.dependency  'WechatOpenSDK'
-    s.dependency 'AlipaySDK_MI'
+    s.ios.vendored_libraries = 'STCPaySDK/Classes/**/**/*.a',
+    s.ios.vendored_frameworks = 'STCPaySDK/Classes/**/**/*.framework'
+
+
 end

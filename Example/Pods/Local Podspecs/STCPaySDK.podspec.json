@@ -20,8 +20,8 @@
   "source_files": "STCPaySDK/Classes/**/*",
   "resources": "STCPaySDK/Assets/Res.bundle",
   "public_header_files": [
-    "Pod/Classes/**/*.h",
-    "Pod/Classes/**/**/*.h"
+    "STCPaySDK/Classes/**/*.h",
+    "STCPaySDK/Classes/**/**/*.h"
   ],
   "frameworks": [
     "SystemConfiguration",
@@ -42,12 +42,11 @@
   "pod_target_xcconfig": {
     "OTHER_LDFLAGS": "-all_load"
   },
-  "dependencies": {
-    "WechatOpenSDK": [
-
-    ],
-    "AlipaySDK_MI": [
-
+  "ios": {
+    "vendored_frameworks": "STCPaySDK/Classes/**/**/*.framework",
+    "vendored_libraries": [
+      "STCPaySDK/Classes/**/**/*.a",
+      "STCPaySDK/Classes/**/**/*.framework"
     ]
   }
 }

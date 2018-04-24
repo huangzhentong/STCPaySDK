@@ -1,0 +1,1 @@
+../../../../../../STCPaySDK/Classes/ThirdSDK/AlipaySDK/AlipaySDK.framework/Headers/AlipaySDK.h
