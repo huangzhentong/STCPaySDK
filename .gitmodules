@@ -1,0 +1,3 @@
+[submodule "STCPaySDK/STCPaySDK"]
+	path = STCPaySDK/STCPaySDK
+	url = /Users/kt-stc08/Desktop/Git/stcpaysdk.git/STCPaySDK/STCPaySDK
