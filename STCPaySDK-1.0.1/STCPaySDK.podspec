@@ -8,8 +8,7 @@ Pod::Spec.new do |s|
   s.description = "TODO: Add long description of the pod here."
   s.frameworks = ["SystemConfiguration", "CoreTelephony", "QuartzCore", "CoreText", "CoreGraphics", "UIKit", "Foundation", "CFNetwork", "CoreMotion"]
   s.libraries = ["z", "c++", "sqlite3"]
-  s.source = { :git => 'https://dev365.keytop.cn/bitbucket/projects/STCPAYS/repos/stcpaysdk/browse/STCPaySDK-1.0.1.git', :tag => s.version }
-
+  s.source = { :path => '.' }
 
   s.ios.deployment_target    = '9.0'
   s.ios.vendored_framework   = 'ios/STCPaySDK.framework'
