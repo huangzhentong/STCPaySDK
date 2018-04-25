@@ -234,70 +234,7 @@
         [WeixinApiManager instance].authResponseCallback=nil;
     }
     return;
-    
-    
-    
-//    NSString *tokenUrl =[NSString stringWithFormat:@"https://api.weixin.qq.com/sns/oauth2/access_token?appid=%@&secret=%@&code=%@&grant_type=authorization_code",APP_SYSTEM_THIRD_PLATFORM_SHARE_WEIXIN_APPKEY,APP_SYSTEM_THIRD_PLATFORM_SHARE_WEIXIN_APPSECRET,code];
-//    
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-//        NSURL *zoneTokenUrl = [NSURL URLWithString:tokenUrl];
-//        NSString *zoneTokenStr = [NSString stringWithContentsOfURL:zoneTokenUrl encoding:NSUTF8StringEncoding error:nil];
-//        NSData *tokenData = [zoneTokenStr dataUsingEncoding:NSUTF8StringEncoding];
-//        
-//        if (tokenData) {
-//            NSDictionary *tokenDic = [NSJSONSerialization JSONObjectWithData:tokenData options:NSJSONReadingMutableContainers error:nil];
-//            /*
-//             {
-//             "access_token" = "OezXcEiiBSKSxW0eoylIeJDUKD6z6dmr42JANLPjNN7Kaf3e4GZ2OncrCfiKnGWiusJMZwzQU8kXcnT1hNs_ykAFDfDEuNp6waj-bDdepEzooL_k1vb7EQzhP8plTbD0AgR8zCRi1It3eNS7yRyd5A";
-//             "expires_in" = 7200;
-//             openid = oyAaTjsDx7pl4Q42O3sDzDtA7gZs;
-//             "refresh_token" = "OezXcEiiBSKSxW0eoylIeJDUKD6z6dmr42JANLPjNN7Kaf3e4GZ2OncrCfiKnGWi2ZzH_XfVVxZbmha9oSFnKAhFsS0iyARkXCa7zPu4MqVRdwyb8J16V8cWw7oNIff0l-5F-4-GJwD8MopmjHXKiA";
-//             scope = "snsapi_userinfo,snsapi_base";
-//             }
-//             */
-//            NSString *userInfoUrl =[NSString stringWithFormat:@"https://api.weixin.qq.com/sns/userinfo?access_token=%@&openid=%@",tokenDic[@"access_token"],tokenDic[@"openid"]];
-//            NSURL *zoneUserInfoUrl = [NSURL URLWithString:userInfoUrl];
-//            NSString *zoneUserInfoStr = [NSString stringWithContentsOfURL:zoneUserInfoUrl encoding:NSUTF8StringEncoding error:nil];
-//            NSData *userInfoData = [zoneUserInfoStr dataUsingEncoding:NSUTF8StringEncoding];
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                if (userInfoData) {
-//                    NSDictionary *userInfoDic = [NSJSONSerialization JSONObjectWithData:userInfoData options:NSJSONReadingMutableContainers error:nil];
-//                    /*
-//                     {
-//                     city = Haidian;
-//                     country = CN;
-//                     headimgurl = "http://wx.qlogo.cn/mmopen/FrdAUicrPIibcpGzxuD0kjfnvc2klwzQ62a1brlWq1sjNfWREia6W8Cf8kNCbErowsSUcGSIltXTqrhQgPEibYakpl5EokGMibMPU/0";
-//                     language = "zh_CN";
-//                     nickname = "xxx";
-//                     openid = oyAaTjsDx7pl4xxxxxxx;
-//                     privilege =     (
-//                     );
-//                     province = Beijing;
-//                     sex = 1;
-//                     unionid = oyAaTjsxxxxxxQ42O3xxxxxxs;
-//                     }
-//                     */
-//                    if([WeixinApiManager instance].authResponseCallback)
-//                    {
-//                        [WeixinApiManager instance].authResponseCallback(code,state,errorCode,tokenDic,userInfoDic);
-//                        [WeixinApiManager instance].authResponseCallback=nil;
-//                    }
-//                    
-//                    
-////                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:strTitle
-////                                                                    message:[NSString stringWithFormat:@"nick:%@",[dic objectForKey:@"nickname"]]
-////                                                                   delegate:self
-////                                                          cancelButtonTitle:@"OK"
-////                                                          otherButtonTitles:nil, nil];
-////                    [alert show];
-////                    [alert release];
-//                    //                        self.nickname.text = [dic objectForKey:@"nickname"];
-//                    //                        self.wxHeadImg.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[dic objectForKey:@"headimgurl"]]]];
-//                    
-//                }
-//            });
-//        }
-//    });
+ 
 }
 
 
@@ -307,9 +244,7 @@
       completeCallback:(WeixinApiPayResponseCompeleteCallback)completeCallback
 {
         if(parameters != nil){
-//            NSMutableString *retcode = [parameters objectForKey:@"retcode"];
-//            if (retcode.intValue == 0){
-            
+
                [WeixinApiManager instance].payReponseCallback=completeCallback;
                 NSMutableString *stamp  = [parameters objectForKey:@"timestamp"];
                 
@@ -322,10 +257,7 @@
                 req.package             = [parameters objectForKey:@"package"];
                 req.sign                = [parameters objectForKey:@"sign"];
                 [WXApi sendReq:req];
-                //日志输出
-                NSLog(@"appid=%@\npartid=%@\nprepayid=%@\nnoncestr=%@\ntimestamp=%ld\npackage=%@\nsign=%@",[parameters objectForKey:@"appid"],req.partnerId,req.prepayId,req.nonceStr,(long)req.timeStamp,req.package,req.sign );
-                
-//            }
+
         }
 }
 

@@ -46,6 +46,6 @@ s.source_files = 'STCPaySDK/Classes/**/*.{h,m,a,framework}','STCPaySDK/Classes/*
     #  }
     s.ios.vendored_libraries = 'STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a',
     s.ios.vendored_frameworks = 'STCPaySDK/Classes/ThirdSDK/AlipaySDK/AlipaySDK.framework'
-
+    s.preserve_paths = "STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a"
 
 end
