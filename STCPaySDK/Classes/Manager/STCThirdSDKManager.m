@@ -8,9 +8,11 @@
 #import "STCThirdSDKManager.h"
 #import <UIKit/UIkit.h>
 #import "STCPayInfoModel.h"
-#import "WeixinApiManager.h"
+#import <objc/runtime.h>
+#import <objc/message.h>
+
 #import "STCPayManager.h"
-#import <AlipaySDK/AlipaySDK.h>
+
 
  NSString * const  WeiXinPay = @"WX";
 NSString * const  AirPay = @"ALI";
@@ -64,23 +66,60 @@ NSString * const  AirPay = @"ALI";
 {
     if (dic != nil) {
        NSString *appID = dic[@"appid"];
-        [WeixinApiManager instance].weiXinID = appID;
-        [WeixinApiManager  wechatPay:dic completeCallback:^(int errorCode, NSString *errorStr, int errorType) {
-            NSError *error = nil;
-              if(errorCode==0&&errorType==0)
-              {
-                  //支付成功
-              }
-              else{
-                  //支付失败
-                  error = [NSError errorWithDomain:errorStr code:errorCode userInfo:nil];
-              }
-            if (block) {
-                block(error);
-            }
+        
+        Class wxClass = NSClassFromString(@"WXApi");
+        if (wxClass == nil) {
+            NSLog(@"未集成微信SDK");
+            return;
+        }
+        Class wxManager = NSClassFromString(@"WeixinApiManager");
+        if (wxManager) {
+            id (*action)(id, SEL) = (id (*)(id, SEL))objc_msgSend;
+            id manager = action(wxManager, NSSelectorFromString(@"instance") );
+            [manager setValue:appID forKey:@"weiXinID"];
+            if([wxManager respondsToSelector:NSSelectorFromString(@"wechatPay:completeCallback:")])
+            {
                 
-        }];
+                
+                void (*action)(id, SEL,NSDictionary*,id) = (void (*)(id, SEL, NSDictionary*,id))objc_msgSend;
+                
+             void (^completeBlock)(int errorCode, NSString *errorStr, int errorType)  =  ^(int errorCode, NSString *errorStr, int errorType) {
+                                        NSError *error = nil;
+                                        if(errorCode==0&&errorType==0)
+                                        {
+                                            //支付成功
+                                        }
+                                        else{
+                                            //支付失败
+                                            error = [NSError errorWithDomain:errorStr code:errorCode userInfo:nil];
+                                        }
+                                        if (block) {
+                                            block(error);
+                                        }
+                    
+                };
+                action(wxManager,NSSelectorFromString(@"wechatPay:completeCallback:"),dic,completeBlock);
+            }
+        }
     }
+        
+//        [WeixinApiManager instance].weiXinID = appID;
+//        [WeixinApiManager  wechatPay:dic completeCallback:^(int errorCode, NSString *errorStr, int errorType) {
+//            NSError *error = nil;
+//              if(errorCode==0&&errorType==0)
+//              {
+//                  //支付成功
+//              }
+//              else{
+//                  //支付失败
+//                  error = [NSError errorWithDomain:errorStr code:errorCode userInfo:nil];
+//              }
+//            if (block) {
+//                block(error);
+//            }
+//
+//        }];
+//    }
     
 }
 //支付宝
@@ -91,31 +130,70 @@ NSString * const  AirPay = @"ALI";
     if (scheme.length == 0) {
         NSLog(@"未添加支付宝的scheme ！！！");
     }
-    [[AlipaySDK defaultService] payOrder:info fromScheme:scheme callback:^(NSDictionary *resultDic) {
-        NSLog(@"reslut = %@",resultDic);
-        NSString *mome=@"";
-        NSError *error = nil;
-        if([resultDic objectForKey:@"memo"])
-        {
-            mome=[resultDic objectForKey:@"memo"];
+    Class aliPayClass = NSClassFromString(@"AlipaySDK");
+    if (aliPayClass == nil) {
+        NSLog(@"未集成支付宝SDK");
+        return;
+    }
+    SEL defaultServiceSel = NSSelectorFromString(@"defaultService");
+    if ([aliPayClass respondsToSelector:defaultServiceSel]) {
+        id (*defaultService)(id,SEL) = (id (*) (id,SEL))objc_msgSend;
+        id aliPay =  defaultService(aliPayClass,defaultServiceSel);
+        SEL payOrderSEL = NSSelectorFromString(@"payOrder:fromScheme:callback:");
+        if ([aliPay respondsToSelector:payOrderSEL]) {
+            void(*payOrder)(id,SEL,NSString*,NSString*,id) = (void(*)(id,SEL,NSString*,NSString*,id))objc_msgSend;
+          void(^completeBlock)(NSDictionary *resultDic)  = ^(NSDictionary *resultDic) {
+                                NSLog(@"reslut = %@",resultDic);
+                                NSString *mome=@"";
+                                NSError *error = nil;
+                                if([resultDic objectForKey:@"memo"])
+                                {
+                                    mome=[resultDic objectForKey:@"memo"];
+                                }
+                                NSInteger errorCode = [resultDic[@"resultStatus"] integerValue];
+                                NSString * resultStr = resultDic[@"result"];
+                                if(errorCode==9000 && resultStr.length > 100)
+                                {
+                
+                                }
+                                else
+                                {
+                                    error = [NSError errorWithDomain:resultStr code:errorCode userInfo:nil];
+                                }
+                                if (block) {
+                                    block(error);
+                                }
+          };
+            
+            payOrder(aliPay,payOrderSEL,info,scheme,completeBlock);
         }
-        NSInteger errorCode = [resultDic[@"resultStatus"] integerValue];
-        NSString * resultStr = resultDic[@"result"];
-        if(errorCode==9000 && resultStr.length > 100)
-        {
-
-        }
-        else
-        {
-            error = [NSError errorWithDomain:resultStr code:errorCode userInfo:nil];
-        }
-        if (block) {
-            block(error);
-        }
-
-    }];
+    }
     
-   
+//    [[AlipaySDK defaultService] payOrder:info fromScheme:scheme callback:^(NSDictionary *resultDic) {
+//        NSLog(@"reslut = %@",resultDic);
+//        NSString *mome=@"";
+//        NSError *error = nil;
+//        if([resultDic objectForKey:@"memo"])
+//        {
+//            mome=[resultDic objectForKey:@"memo"];
+//        }
+//        NSInteger errorCode = [resultDic[@"resultStatus"] integerValue];
+//        NSString * resultStr = resultDic[@"result"];
+//        if(errorCode==9000 && resultStr.length > 100)
+//        {
+//
+//        }
+//        else
+//        {
+//            error = [NSError errorWithDomain:resultStr code:errorCode userInfo:nil];
+//        }
+//        if (block) {
+//            block(error);
+//        }
+//
+//    }];
+//
+//
 
 }
 

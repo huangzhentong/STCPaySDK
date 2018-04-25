@@ -13,4 +13,5 @@ extern NSString * const  AirPay;
 @interface STCThirdSDKManager : NSObject
 
 +(void)disposePayURL:(NSString *)payUrl withPayComplete:(void(^)(NSError*error,NSString *url))block;
++(void)weixinPay:(NSDictionary *)dic withComplete:(void(^)(NSError *error))block;
 @end

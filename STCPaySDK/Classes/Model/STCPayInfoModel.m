@@ -9,26 +9,7 @@
 
 @implementation STCPayInfoModel
 
-//-(void)setData:(id)data
-//{
-//    if (self.dataType.length>0) {
-//
-//        if ([self.dataType isEqualToString:@"JSON"]) {
-//            NSData *jsonData = [data dataUsingEncoding:NSUTF8StringEncoding];
-//           _data = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:nil];
-//
-//        }
-//        else if([self.dataType isEqualToString:@""])
-//        {
-//            _data = [data copy];
-//        }
-//
-//    }
-//    else
-//    {
-//        _data = [data copy];
-//    }
-//}
+
 -(id)data
 {
     if ([self.dataType isEqualToString:@"JSON"])
