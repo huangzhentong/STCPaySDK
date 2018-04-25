@@ -1,6 +1,6 @@
 {
   "name": "STCPaySDK",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "summary": "A short description of STCPaySDK.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/zhentong.huang/STCPaySDK",
@@ -11,8 +11,8 @@
     "zhentong.huang": "181310067@qq.com"
   },
   "source": {
-    "git": "https://huangzhentong@dev365.keytop.cn/bitbucket/scm/stcpays/stcpaysdk.git",
-    "tag": "1.0.1"
+    "git": "/Users/kt-stc08/Desktop/STCPaySDK/STCPaySDK",
+    "tag": "1.0.2"
   },
   "platforms": {
     "ios": "9.0"
@@ -20,13 +20,8 @@
   "source_files": [
     "STCPaySDK/Classes/**/*.{h,m,a,framework}",
     "STCPaySDK/Classes/**/**/*.{a,framework}",
-    "STCPaySDK/Classes/**/*"
+    "STCPaySDK/Classes/*"
   ],
-  "resources": [
-    "STCPaySDK/Assets/Res.bundle",
-    "STCPaySDK/**/**/**/*.bundle"
-  ],
-  "public_header_files": "STCPaySDK/Classes/**/*.h",
   "frameworks": [
     "SystemConfiguration",
     "CoreTelephony",
@@ -46,12 +41,13 @@
   "pod_target_xcconfig": {
     "OTHER_LDFLAGS": "-all_load"
   },
+  "public_header_files": "STCPaySDK/Classes/STCPayCode.framework/Headers/STCPayManager.h",
   "ios": {
     "vendored_frameworks": "STCPaySDK/Classes/ThirdSDK/AlipaySDK/AlipaySDK.framework",
     "vendored_libraries": [
       "STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a",
       "STCPaySDK/Classes/ThirdSDK/AlipaySDK/AlipaySDK.framework",
-      "STCPaySDK/Classes/**/*.framework"
+      "STCPaySDK/Classes/STCPayCode.framework"
     ]
   },
   "preserve_paths": "STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a"

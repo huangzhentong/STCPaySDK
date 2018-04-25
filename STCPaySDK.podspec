@@ -25,18 +25,19 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT' }
   s.author           = { 'zhentong.huang' => '181310067@qq.com' }
-  s.source           = { :git => 'https://huangzhentong@dev365.keytop.cn/bitbucket/scm/stcpays/stcpaysdk.git', :tag => s.version }
+  s.source           = { :git => '/Users/kt-stc08/Desktop/STCPaySDK/STCPaySDK', :tag => s.version }
+  #s.source           = { :git => 'https://huangzhentong@dev365.keytop.cn/bitbucket/scm/stcpays/stcpaysdk.git', :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
 s.source_files = 'STCPaySDK/Classes/**/*.{h,m,a,framework}','STCPaySDK/Classes/**/**/*.{a,framework}','STCPaySDK/Classes/*'
-  s.resources = "STCPaySDK/Assets/Res.bundle","STCPaySDK/**/**/**/*.bundle"
+
 #s.resource_bundles = {
 #  'STCPaySDK' => ['STCPaySDK/Assets/Res.budnle']
 # }
  
-   s.public_header_files = 'STCPaySDK/Classes/**/*.h'
+ #s.public_header_files = 'STCPaySDK/Classes/**/*.h'
     s.frameworks            = 'SystemConfiguration', 'CoreTelephony', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation','CFNetwork', 'CoreMotion'
     s.libraries             = 'z', 'c++', 'sqlite3'
     s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
@@ -44,8 +45,9 @@ s.source_files = 'STCPaySDK/Classes/**/*.{h,m,a,framework}','STCPaySDK/Classes/*
     # "dependencies": {
     # "WechatOpenSDK": [ ]
     #  }
+    s.public_header_files = 'STCPaySDK/Classes/STCPayCode.framework/Headers/STCPayManager.h'
     s.ios.vendored_libraries = 'STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a',
-    s.ios.vendored_frameworks = 'STCPaySDK/Classes/ThirdSDK/AlipaySDK/AlipaySDK.framework','STCPaySDK/Classes/*.framework'
+    s.ios.vendored_frameworks = 'STCPaySDK/Classes/ThirdSDK/AlipaySDK/AlipaySDK.framework','STCPaySDK/Classes/STCPayCode.framework'
     s.preserve_paths = "STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a"
 
 end

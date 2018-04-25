@@ -8,46 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		00200EA9B8BC379B8877AA625FEFFB85 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28F3D57B5347A94914BF8A3E7A16DB5 /* CFNetwork.framework */; };
-		0470AB4596F3612AE67EA6150B4507B5 /* nav_close@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = D95B2D33B5C557ADAE3A754868DD7569 /* nav_close@2x.png */; };
 		0D15126EBF68D7864B3723AA2823D9A6 /* Pods-STCPaySDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE921A0025224D4E8C919F134644BD9B /* Pods-STCPaySDK_Example-dummy.m */; };
-		0F34E7C26039EC12F291E9512666FEF5 /* STCPayCode in Sources */ = {isa = PBXBuildFile; fileRef = 24F2CD9CA23D0D70FCCE07FF218BCB68 /* STCPayCode */; };
-		0F4E1F50AD7A0A137D767A223773A8A2 /* STCPaySDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A623452B514EA1EB2FFCF844FFD4CE /* STCPaySDK-dummy.m */; };
-		14EB4CC943591335B04A43F798709F4F /* STCPayWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C122231BF87F3B04093DA92E35C14A /* STCPayWebViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1AF4A49543625026F586180A1D9FCB39 /* Root.plist in Sources */ = {isa = PBXBuildFile; fileRef = 9B37DF4DE4A604EF8587C84DC45DA5FB /* Root.plist */; };
-		25BCB5E54478D334C1C3BCC95D3B76F6 /* STCPayCode in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB2D8353B339D3268B55E8392A9649 /* STCPayCode */; };
-		26A0C95305F7CFB48B0E71BAEC70C007 /* libWeChatSDK.a in Sources */ = {isa = PBXBuildFile; fileRef = 48456AC2327906B42F00BBC074035132 /* libWeChatSDK.a */; };
+		14EB4CC943591335B04A43F798709F4F /* STCPayWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 01CEC1D0EB881FD8EB5B02255DF2C7CA /* STCPayWebViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3BB3CBF9C78C272A80AE39CBD246F7DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A9B90CECF619E71DEF53EADDF29902 /* Foundation.framework */; };
 		3F2F16285B413EA10424FA55C54BDC82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A9B90CECF619E71DEF53EADDF29902 /* Foundation.framework */; };
-		47082517A4B9A2C0CD82620B4679CF83 /* shutdown@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = ADFC4A59A4AA64D53082EA9CF2C2B8F1 /* shutdown@2x.png */; };
-		4BF16EDF5050EF4BE470F06D784B46FB /* refresh@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 13E2CF2610068386323191BFBA14F7D5 /* refresh@2x.png */; };
-		4EA26E4AD12F2E24F676682A7812873D /* STCThirdSDKManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 942AB82C29B6455B8FE513974CFA3D29 /* STCThirdSDKManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4EA26E4AD12F2E24F676682A7812873D /* STCThirdSDKManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 177BACF6420F816E660D2747AFB6BAEF /* STCThirdSDKManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		535512B1621574803F3127C3AA224A08 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5B021E05129CE85E3267C4C25180A6 /* SystemConfiguration.framework */; };
 		53600BDF235484FCFAD39D021335EB83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937E9D148ED6A479E251337F289FD78A /* QuartzCore.framework */; };
-		5C6607DD12B8095E0E5AB4EA83E4209B /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = DEBC615B0FB0ABFA5ED07062B37688D7 /* WXApi.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6402050DB94C025DDE47C552CA2BEBF7 /* WeixinApiManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C72E88EF91DFB89C27258C72990E4BB /* WeixinApiManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		70FF2762D4B6D0F4B71BFC984B32167C /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A7F7FC3D4F8575828D76AEC35534C15 /* WXApiObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7D2F677E4A24B1B0DAB4C1CAADC1781E /* nav_close@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = B9AE0C4EDF11D9CEA88A905E227D45A1 /* nav_close@3x.png */; };
-		7FE696D678C0D740F0C677078B92EA8F /* AlipaySDK in Sources */ = {isa = PBXBuildFile; fileRef = 05C7F64DCB257AB9C80DB4BB5678F92D /* AlipaySDK */; };
+		59F909F292E35FA74415A63CB7B15F9C /* WeixinApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D91E12A58CA4DA6CC81F476CE5D8549B /* WeixinApiManager.m */; };
+		5C6607DD12B8095E0E5AB4EA83E4209B /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 26ED3061EDF977CB88D96AFA2F43725E /* WXApi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6402050DB94C025DDE47C552CA2BEBF7 /* WeixinApiManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A039FF117471BA1734F8582A2E0AC54A /* WeixinApiManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		70FF2762D4B6D0F4B71BFC984B32167C /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 89985A4461C098195208E6F4E424BED0 /* WXApiObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		85C646AC94F5618143534EE85AEF67CD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881F64EAEFF80F0858BDE8CE62D4DA7E /* CoreMotion.framework */; };
-		879DFB14B321F1C904A6D0E6F6628205 /* nav_return@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = FE6A75AEC350E28CD693B8DC5B637FFA /* nav_return@2x.png */; };
+		866637C005BD0C1786B9D5BF68ADCA42 /* STCPaySDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5FC8D2C7C1040F4EBF49AEAE492644 /* STCPaySDK-dummy.m */; };
 		96795318E7BE92C8C48E306CB28A802B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FA56489864DBEEEF01602FFFF71861 /* CoreTelephony.framework */; };
-		99FA26C9696C1F136561841A4971116C /* bar@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 982524CDCF283CAC7C757BA9EFBA0F5B /* bar@2x.png */; };
-		9AC072FD9A96F6399FD5B5969AF8931E /* nav_return@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = BFED367F2E59EBF6260FE4438C1C7FE2 /* nav_return@3x.png */; };
-		A490F4B1471B21EC5B5C6CEF549ACBB3 /* WeixinApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9173A1460F88E654B2AD26209C2DE /* WeixinApiManager.m */; };
-		A7703FE4E81C6E59872B26CB551B3120 /* WechatAuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D3E7CCB5AD51360082FF0A4E577F2FB /* WechatAuthSDK.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A801CE57DFB26A18BC91213A3CF5666A /* AlipaySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D3468D7C3313DA4054278EA20E88337B /* AlipaySDK.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AF1799146A3C8A36130188CEE60C626A /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = F32725BC1E92851F4B8A978708B91D40 /* README.txt */; };
-		B475FF3908B8CC925AEBC5D9C65E180C /* STCPayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 647C3CD2F72928E52F767AA83D0606BF /* STCPayManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BB0D64EF4A67BE9BFBAB88EEF02557AC /* refresh_click@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 3ED9730175A4DC87587FF73AF135187E /* refresh_click@2x.png */; };
+		A7703FE4E81C6E59872B26CB551B3120 /* WechatAuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C00FE32B97ECD6E175B7C21930C13ABE /* WechatAuthSDK.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A801CE57DFB26A18BC91213A3CF5666A /* AlipaySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A381719DF5D23B91270F14A0E2FA149F /* AlipaySDK.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B475FF3908B8CC925AEBC5D9C65E180C /* STCPayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A9376AD6A231AA8C2246C0B9D37C58EB /* STCPayManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C06014EA882EBB721447ADAA76A02CD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327421D25DCA3348DD5FDC1AD255A31C /* CoreGraphics.framework */; };
-		CB4F04ACF63CC4702E5740E8B87CE2EC /* Root.strings in Sources */ = {isa = PBXBuildFile; fileRef = 7FD2672E4508B04855F85A3F12A0C129 /* Root.strings */; };
-		CCCD70B50AB6810751DB15FCEA57C556 /* UIImage+LoadWithBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 03081E60743F629F2D0377E722F077E2 /* UIImage+LoadWithBundle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CCCD70B50AB6810751DB15FCEA57C556 /* UIImage+LoadWithBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C737146D2C08846A7223D6024441F3 /* UIImage+LoadWithBundle.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D399DA8546B2794EE7B5B948FBBECE8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0613A582A8F6C38F1C86436F5921605B /* UIKit.framework */; };
-		D3D50451DC630FDD22163BE8ECF3F84D /* shutdown_click@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 586710F623C3C45A94660DDD1B0A506E /* shutdown_click@2x.png */; };
+		D78A492E84A975B5C0ED28C32D71ADCC /* libWeChatSDK.a in Sources */ = {isa = PBXBuildFile; fileRef = 1319D85D012A179B4DEF048BB51DC56C /* libWeChatSDK.a */; };
 		D8A2793EED4D0ECC722B29CF34108708 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A9B90CECF619E71DEF53EADDF29902 /* Foundation.framework */; };
-		E21ED9F78688622A4F3D751212AF1755 /* STCWKWebViewPanelManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C6AF2C1219A0A1F8EE1C2995F0C3DBB4 /* STCWKWebViewPanelManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E2D2388C1464F0D1468EEFE5057AB85C /* APayAuthInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0B2F6B360F0A619E6AA7558FD0CDFD /* APayAuthInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E5136C73542E78892B7DAA17523A0E0C /* STCPayInfoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8187FC5CB1FAE8DE3A14701E94870455 /* STCPayInfoModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E21ED9F78688622A4F3D751212AF1755 /* STCWKWebViewPanelManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A83109FF1F8866F2D69FB108409CBEF /* STCWKWebViewPanelManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E2D2388C1464F0D1468EEFE5057AB85C /* APayAuthInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B81298528F93B1D5D77FCDC63D92A5A6 /* APayAuthInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E5136C73542E78892B7DAA17523A0E0C /* STCPayInfoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C80C64C9FDEC49D5ED3936183B728B4D /* STCPayInfoModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F7429B723EF30C493E60290DB9413F26 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8291639372CEDEDEA680CC38036686CB /* CoreText.framework */; };
 		FCDD9EAC16C57B098ACC5E19D754853E /* Pods-STCPaySDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C724E0DA1EAB308037197E1782F2F875 /* Pods-STCPaySDK_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -63,70 +48,53 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03081E60743F629F2D0377E722F077E2 /* UIImage+LoadWithBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+LoadWithBundle.h"; sourceTree = "<group>"; };
-		05C7F64DCB257AB9C80DB4BB5678F92D /* AlipaySDK */ = {isa = PBXFileReference; includeInIndex = 1; path = AlipaySDK; sourceTree = "<group>"; };
+		01CEC1D0EB881FD8EB5B02255DF2C7CA /* STCPayWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STCPayWebViewController.h; sourceTree = "<group>"; };
 		0613A582A8F6C38F1C86436F5921605B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		096197A44875D92B7DD3E27A9F5B2B6F /* AlipaySDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
-		13E2CF2610068386323191BFBA14F7D5 /* refresh@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "refresh@2x.png"; sourceTree = "<group>"; };
-		1A3FD7D3F0A0089442CF361F7D688F0C /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = STCPaySDK/Classes/ThirdSDK/AlipaySDK/AlipaySDK.framework; sourceTree = "<group>"; };
+		0A83109FF1F8866F2D69FB108409CBEF /* STCWKWebViewPanelManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STCWKWebViewPanelManager.h; sourceTree = "<group>"; };
+		10A51470A17CB2DFFB58158733461648 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = STCPaySDK/Classes/ThirdSDK/AlipaySDK/AlipaySDK.framework; sourceTree = "<group>"; };
+		1319D85D012A179B4DEF048BB51DC56C /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		177BACF6420F816E660D2747AFB6BAEF /* STCThirdSDKManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STCThirdSDKManager.h; sourceTree = "<group>"; };
 		1B476A8009383C467C19F96D1E058C4D /* Pods-STCPaySDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STCPaySDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1BBB2D8353B339D3268B55E8392A9649 /* STCPayCode */ = {isa = PBXFileReference; includeInIndex = 1; path = STCPayCode; sourceTree = "<group>"; };
-		1C72E88EF91DFB89C27258C72990E4BB /* WeixinApiManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WeixinApiManager.h; sourceTree = "<group>"; };
 		21C22A972ECA044A9BC89DCCE1551A17 /* Pods-STCPaySDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STCPaySDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		24F2CD9CA23D0D70FCCE07FF218BCB68 /* STCPayCode */ = {isa = PBXFileReference; includeInIndex = 1; name = STCPayCode; path = Versions/A/STCPayCode; sourceTree = "<group>"; };
-		27A1CBF34879C185660127235CC989C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		26ED3061EDF977CB88D96AFA2F43725E /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		28920A072B26F7F506EDEA16C3DC1A05 /* Pods-STCPaySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STCPaySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2F513C5C67025E763643503BE1A57CEC /* Res.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = Res.bundle; sourceTree = "<group>"; };
+		2BCA62100571A34C1EBA4999EA2AD0B0 /* STCPaySDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STCPaySDK-prefix.pch"; sourceTree = "<group>"; };
 		327421D25DCA3348DD5FDC1AD255A31C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		348955ECC14CA83CF176F7372C24F939 /* Pods-STCPaySDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STCPaySDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		35C122231BF87F3B04093DA92E35C14A /* STCPayWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STCPayWebViewController.h; sourceTree = "<group>"; };
-		3ED9730175A4DC87587FF73AF135187E /* refresh_click@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "refresh_click@2x.png"; sourceTree = "<group>"; };
 		43A9B90CECF619E71DEF53EADDF29902 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		465D19D7009781DCAC001A3B7D925DC0 /* Pods-STCPaySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STCPaySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		48456AC2327906B42F00BBC074035132 /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		51A623452B514EA1EB2FFCF844FFD4CE /* STCPaySDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STCPaySDK-dummy.m"; sourceTree = "<group>"; };
-		54C9173A1460F88E654B2AD26209C2DE /* WeixinApiManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WeixinApiManager.m; sourceTree = "<group>"; };
-		586710F623C3C45A94660DDD1B0A506E /* shutdown_click@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "shutdown_click@2x.png"; sourceTree = "<group>"; };
-		647C3CD2F72928E52F767AA83D0606BF /* STCPayManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STCPayManager.h; sourceTree = "<group>"; };
+		5C5DFE411327203E9CB827E8FA3613AB /* STCPaySDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STCPaySDK.xcconfig; sourceTree = "<group>"; };
 		69005CC15374B6C505DA699CDFD791FA /* Pods-STCPaySDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STCPaySDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6D0B2F6B360F0A619E6AA7558FD0CDFD /* APayAuthInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = APayAuthInfo.h; sourceTree = "<group>"; };
-		76734533452C12D47CC598C24E655845 /* STCPaySDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STCPaySDK.xcconfig; sourceTree = "<group>"; };
-		7D3E7CCB5AD51360082FF0A4E577F2FB /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		7A5FC8D2C7C1040F4EBF49AEAE492644 /* STCPaySDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STCPaySDK-dummy.m"; sourceTree = "<group>"; };
 		7DDEA9C27ADBFC84596957C0A70E3D87 /* libPods-STCPaySDK_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-STCPaySDK_Tests.a"; path = "libPods-STCPaySDK_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FD2672E4508B04855F85A3F12A0C129 /* Root.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Root.strings; path = en.lproj/Root.strings; sourceTree = "<group>"; };
-		8187FC5CB1FAE8DE3A14701E94870455 /* STCPayInfoModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STCPayInfoModel.h; sourceTree = "<group>"; };
 		8291639372CEDEDEA680CC38036686CB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		84FA56489864DBEEEF01602FFFF71861 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		881F64EAEFF80F0858BDE8CE62D4DA7E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		89985A4461C098195208E6F4E424BED0 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		89F141533CA493E3D59357F49092EDBA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		937E9D148ED6A479E251337F289FD78A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		942AB82C29B6455B8FE513974CFA3D29 /* STCThirdSDKManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STCThirdSDKManager.h; sourceTree = "<group>"; };
-		982524CDCF283CAC7C757BA9EFBA0F5B /* bar@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "bar@2x.png"; sourceTree = "<group>"; };
-		98C713DB6054B570DD5157C4505511BD /* STCPaySDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STCPaySDK-prefix.pch"; sourceTree = "<group>"; };
 		99E9A814B7B8E3831650A7A284DDE513 /* Pods-STCPaySDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STCPaySDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9A7F7FC3D4F8575828D76AEC35534C15 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		9B37DF4DE4A604EF8587C84DC45DA5FB /* Root.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Root.plist; sourceTree = "<group>"; };
+		A039FF117471BA1734F8582A2E0AC54A /* WeixinApiManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WeixinApiManager.h; sourceTree = "<group>"; };
+		A381719DF5D23B91270F14A0E2FA149F /* AlipaySDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AlipaySDK.h; sourceTree = "<group>"; };
 		A74F69BE219B0A41D9F2FF21A3D1B0D3 /* Pods-STCPaySDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-STCPaySDK_Example-resources.sh"; sourceTree = "<group>"; };
 		A79F1211F48BD5793677ABE12730EE05 /* Pods-STCPaySDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-STCPaySDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		ADFC4A59A4AA64D53082EA9CF2C2B8F1 /* shutdown@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "shutdown@2x.png"; sourceTree = "<group>"; };
+		A9376AD6A231AA8C2246C0B9D37C58EB /* STCPayManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STCPayManager.h; sourceTree = "<group>"; };
 		B28F3D57B5347A94914BF8A3E7A16DB5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		B2E1C77F3801CD88B31E0DB9D3AB61A3 /* STCPaySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = STCPaySDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B47543FB34127C9D73BCDAE72A5638E5 /* Pods-STCPaySDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-STCPaySDK_Example-frameworks.sh"; sourceTree = "<group>"; };
 		B4EB88DA27796F854DB4A22E1D709B77 /* libSTCPaySDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSTCPaySDK.a; path = libSTCPaySDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B721C38D0F76CE9E0E2F6631CF0A3E6F /* STCPaySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = STCPaySDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B9AE0C4EDF11D9CEA88A905E227D45A1 /* nav_close@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "nav_close@3x.png"; sourceTree = "<group>"; };
-		BFED367F2E59EBF6260FE4438C1C7FE2 /* nav_return@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "nav_return@3x.png"; sourceTree = "<group>"; };
-		C6AF2C1219A0A1F8EE1C2995F0C3DBB4 /* STCWKWebViewPanelManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STCWKWebViewPanelManager.h; sourceTree = "<group>"; };
+		B81298528F93B1D5D77FCDC63D92A5A6 /* APayAuthInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = APayAuthInfo.h; sourceTree = "<group>"; };
+		C00FE32B97ECD6E175B7C21930C13ABE /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		C724E0DA1EAB308037197E1782F2F875 /* Pods-STCPaySDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-STCPaySDK_Tests-dummy.m"; sourceTree = "<group>"; };
-		D3468D7C3313DA4054278EA20E88337B /* AlipaySDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AlipaySDK.h; sourceTree = "<group>"; };
+		C80C64C9FDEC49D5ED3936183B728B4D /* STCPayInfoModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STCPayInfoModel.h; sourceTree = "<group>"; };
 		D40F489467876E8D329C1F6E63FC49E4 /* Pods-STCPaySDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-STCPaySDK_Tests-resources.sh"; sourceTree = "<group>"; };
-		D95B2D33B5C557ADAE3A754868DD7569 /* nav_close@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "nav_close@2x.png"; sourceTree = "<group>"; };
-		DEBC615B0FB0ABFA5ED07062B37688D7 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		D91E12A58CA4DA6CC81F476CE5D8549B /* WeixinApiManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WeixinApiManager.m; sourceTree = "<group>"; };
+		E9C737146D2C08846A7223D6024441F3 /* UIImage+LoadWithBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+LoadWithBundle.h"; sourceTree = "<group>"; };
 		EC536537AB104C7C300AC9BAFAB17F7B /* libPods-STCPaySDK_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-STCPaySDK_Example.a"; path = "libPods-STCPaySDK_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED23B23D8C4CB28ACDE1870F8D324AB7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		F32725BC1E92851F4B8A978708B91D40 /* README.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = README.txt; sourceTree = "<group>"; };
+		F0DC7510137BFE8AEA9BDB90DA4CDF39 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		F3CE31708BA52DF7D2ED69680B6D0B0C /* Pods-STCPaySDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STCPaySDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FA5B021E05129CE85E3267C4C25180A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		FE6A75AEC350E28CD693B8DC5B637FFA /* nav_return@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "nav_return@2x.png"; sourceTree = "<group>"; };
 		FE921A0025224D4E8C919F134644BD9B /* Pods-STCPaySDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-STCPaySDK_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,17 +134,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12698450E916CD6225EC56BC15840689 /* AlipaySDK.bundle */ = {
+		0EC071D8FEF8B299E771647AD22D50D9 /* Versions */ = {
 			isa = PBXGroup;
 			children = (
-				982524CDCF283CAC7C757BA9EFBA0F5B /* bar@2x.png */,
-				13E2CF2610068386323191BFBA14F7D5 /* refresh@2x.png */,
-				3ED9730175A4DC87587FF73AF135187E /* refresh_click@2x.png */,
-				ADFC4A59A4AA64D53082EA9CF2C2B8F1 /* shutdown@2x.png */,
-				586710F623C3C45A94660DDD1B0A506E /* shutdown_click@2x.png */,
+				13BB2E36D063AB0A4A7780DD4AE8C3A3 /* A */,
 			);
-			name = AlipaySDK.bundle;
-			path = AlipaySDK.bundle;
+			name = Versions;
+			path = Versions;
+			sourceTree = "<group>";
+		};
+		13BB2E36D063AB0A4A7780DD4AE8C3A3 /* A */ = {
+			isa = PBXGroup;
+			children = (
+				5D1E51847E516F21DDA1A5C64222BC19 /* Headers */,
+			);
+			name = A;
+			path = A;
+			sourceTree = "<group>";
+		};
+		15829D35C1CD5FC3BDE7012593FDE4B8 /* STCPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				7DE87610B65603A7E6FD1D06FDFDF771 /* Frameworks */,
+				C495E49C2123C219182EC40F8A812247 /* Pod */,
+				D34B16984E20B33D30823914C57DBC13 /* STCPayCode.framework */,
+				1E4954A0D77FC1B283ABADC417F6A1D6 /* Support Files */,
+				49D2807C10C6FF0011A20543638CF6AE /* ThirdSDK */,
+				E306397EE16A219295C135D64FBAB20F /* WeixinApiManager */,
+			);
+			name = STCPaySDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1E4954A0D77FC1B283ABADC417F6A1D6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C5DFE411327203E9CB827E8FA3613AB /* STCPaySDK.xcconfig */,
+				7A5FC8D2C7C1040F4EBF49AEAE492644 /* STCPaySDK-dummy.m */,
+				2BCA62100571A34C1EBA4999EA2AD0B0 /* STCPaySDK-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/STCPaySDK";
 			sourceTree = "<group>";
 		};
 		24002A6670E6882ECD6250D3E60F9CB2 /* Frameworks */ = {
@@ -187,122 +185,75 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2552C115909EDC531499664F52E4DEF2 /* Versions */ = {
+		31B2089C68106A8F4E22AAEAFF440B4E /* AlipaySDK.framework */ = {
 			isa = PBXGroup;
 			children = (
-				73CE9E420D758ADBCD61977EA4B59C1C /* A */,
+				4CD2573DA1A5C1F61507C289F1BFE94C /* Headers */,
 			);
-			name = Versions;
-			path = Versions;
+			name = AlipaySDK.framework;
+			path = AlipaySDK.framework;
 			sourceTree = "<group>";
 		};
-		2860261482D5142EC435954830540892 /* STCPayCode.framework */ = {
+		49D2807C10C6FF0011A20543638CF6AE /* ThirdSDK */ = {
 			isa = PBXGroup;
 			children = (
-				2552C115909EDC531499664F52E4DEF2 /* Versions */,
-			);
-			name = STCPayCode.framework;
-			path = STCPaySDK/Classes/STCPayCode.framework;
-			sourceTree = "<group>";
-		};
-		29B151BF33B743332B13397E1018D445 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				2F513C5C67025E763643503BE1A57CEC /* Res.bundle */,
-			);
-			name = Resources;
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		334D80ED0CD23A00458B66EDF8A5564D /* ThirdSDK */ = {
-			isa = PBXGroup;
-			children = (
-				55828FA95C11721BB501C11B696680C6 /* AlipaySDK */,
+				6E0A2E44B4AD8BA05F2DCA3EF8A4ACA6 /* AlipaySDK */,
+				D58A42C8D6FF8179D76DF83811D6CF8B /* WechatSDK1.8.2 */,
 			);
 			name = ThirdSDK;
 			path = STCPaySDK/Classes/ThirdSDK;
 			sourceTree = "<group>";
 		};
-		3D6C52DA64D8B06925CED0675F36EC61 /* Support Files */ = {
+		4CD2573DA1A5C1F61507C289F1BFE94C /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				76734533452C12D47CC598C24E655845 /* STCPaySDK.xcconfig */,
-				51A623452B514EA1EB2FFCF844FFD4CE /* STCPaySDK-dummy.m */,
-				98C713DB6054B570DD5157C4505511BD /* STCPaySDK-prefix.pch */,
+				A381719DF5D23B91270F14A0E2FA149F /* AlipaySDK.h */,
+				B81298528F93B1D5D77FCDC63D92A5A6 /* APayAuthInfo.h */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/STCPaySDK";
+			name = Headers;
+			path = Headers;
 			sourceTree = "<group>";
 		};
-		55828FA95C11721BB501C11B696680C6 /* AlipaySDK */ = {
+		5D1E51847E516F21DDA1A5C64222BC19 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				096197A44875D92B7DD3E27A9F5B2B6F /* AlipaySDK.bundle */,
+				C80C64C9FDEC49D5ED3936183B728B4D /* STCPayInfoModel.h */,
+				A9376AD6A231AA8C2246C0B9D37C58EB /* STCPayManager.h */,
+				01CEC1D0EB881FD8EB5B02255DF2C7CA /* STCPayWebViewController.h */,
+				177BACF6420F816E660D2747AFB6BAEF /* STCThirdSDKManager.h */,
+				0A83109FF1F8866F2D69FB108409CBEF /* STCWKWebViewPanelManager.h */,
+				E9C737146D2C08846A7223D6024441F3 /* UIImage+LoadWithBundle.h */,
+			);
+			name = Headers;
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		6E0A2E44B4AD8BA05F2DCA3EF8A4ACA6 /* AlipaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				31B2089C68106A8F4E22AAEAFF440B4E /* AlipaySDK.framework */,
 			);
 			name = AlipaySDK;
 			path = AlipaySDK;
-			sourceTree = "<group>";
-		};
-		5C24EE57AF91C1DE772CA8EA2F23EB51 /* WechatSDK1.8.2 */ = {
-			isa = PBXGroup;
-			children = (
-				48456AC2327906B42F00BBC074035132 /* libWeChatSDK.a */,
-				F32725BC1E92851F4B8A978708B91D40 /* README.txt */,
-				7D3E7CCB5AD51360082FF0A4E577F2FB /* WechatAuthSDK.h */,
-				DEBC615B0FB0ABFA5ED07062B37688D7 /* WXApi.h */,
-				9A7F7FC3D4F8575828D76AEC35534C15 /* WXApiObject.h */,
-			);
-			name = WechatSDK1.8.2;
-			path = WechatSDK1.8.2;
-			sourceTree = "<group>";
-		};
-		63D8137F557722396656BFDFC216916B /* STCPayCode.framework */ = {
-			isa = PBXGroup;
-			children = (
-				24F2CD9CA23D0D70FCCE07FF218BCB68 /* STCPayCode */,
-				F1E1715ECA1AE47BDCE00D8FB1D34D13 /* Versions */,
-			);
-			name = STCPayCode.framework;
-			path = STCPaySDK/Classes/STCPayCode.framework;
-			sourceTree = "<group>";
-		};
-		73CE9E420D758ADBCD61977EA4B59C1C /* A */ = {
-			isa = PBXGroup;
-			children = (
-				29B151BF33B743332B13397E1018D445 /* Resources */,
-			);
-			name = A;
-			path = A;
-			sourceTree = "<group>";
-		};
-		7B322004B79E018FF83878EAF7AF4AED /* WeixinApiManager */ = {
-			isa = PBXGroup;
-			children = (
-				1C72E88EF91DFB89C27258C72990E4BB /* WeixinApiManager.h */,
-				54C9173A1460F88E654B2AD26209C2DE /* WeixinApiManager.m */,
-			);
-			name = WeixinApiManager;
-			path = STCPaySDK/Classes/WeixinApiManager;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				E0067CCBF345918E9A13A854927C4A4C /* Development Pods */,
+				BC4990CAEC2DF4837DF7AAE17D87F94C /* Development Pods */,
 				24002A6670E6882ECD6250D3E60F9CB2 /* Frameworks */,
 				BB28A08F4DE013567B07B20734F52BBC /* Products */,
 				88E94DB3682F7C5FF781A769841CD9ED /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7FCC373AEA7C4F0D2C6D8928D4EADF88 /* Resources */ = {
+		7DE87610B65603A7E6FD1D06FDFDF771 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2860261482D5142EC435954830540892 /* STCPayCode.framework */,
-				334D80ED0CD23A00458B66EDF8A5564D /* ThirdSDK */,
+				10A51470A17CB2DFFB58158733461648 /* AlipaySDK.framework */,
 			);
-			name = Resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		802948A786A4C076312B9800B1B950AA /* iOS */ = {
@@ -330,31 +281,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		89D5A57A1C72F614C4681F7D2ADA6E84 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				8187FC5CB1FAE8DE3A14701E94870455 /* STCPayInfoModel.h */,
-				647C3CD2F72928E52F767AA83D0606BF /* STCPayManager.h */,
-				35C122231BF87F3B04093DA92E35C14A /* STCPayWebViewController.h */,
-				942AB82C29B6455B8FE513974CFA3D29 /* STCThirdSDKManager.h */,
-				C6AF2C1219A0A1F8EE1C2995F0C3DBB4 /* STCWKWebViewPanelManager.h */,
-				03081E60743F629F2D0377E722F077E2 /* UIImage+LoadWithBundle.h */,
-			);
-			name = Headers;
-			path = Headers;
-			sourceTree = "<group>";
-		};
-		982F5468ED9625DAFBA48AAD7AFD094E /* A */ = {
-			isa = PBXGroup;
-			children = (
-				1BBB2D8353B339D3268B55E8392A9649 /* STCPayCode */,
-				89D5A57A1C72F614C4681F7D2ADA6E84 /* Headers */,
-				AC6570C6CAAC8D53DEAA13613F33D744 /* Resources */,
-			);
-			name = A;
-			path = A;
-			sourceTree = "<group>";
-		};
 		9A242AF6F2B840AF9ECB168505CAE7BA /* Pods-STCPaySDK_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,50 +296,6 @@
 			path = "Target Support Files/Pods-STCPaySDK_Tests";
 			sourceTree = "<group>";
 		};
-		9FC52D42386E3EF03D3A481424049966 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				D3468D7C3313DA4054278EA20E88337B /* AlipaySDK.h */,
-				6D0B2F6B360F0A619E6AA7558FD0CDFD /* APayAuthInfo.h */,
-			);
-			name = Headers;
-			path = Headers;
-			sourceTree = "<group>";
-		};
-		A05D0C58D5AA2F1D46E81927A412AC27 /* STCPaySDK */ = {
-			isa = PBXGroup;
-			children = (
-				D9398EB464826D94255788F21FAC490E /* Frameworks */,
-				B251EF757C90C32653766B7B220E6E92 /* Pod */,
-				7FCC373AEA7C4F0D2C6D8928D4EADF88 /* Resources */,
-				63D8137F557722396656BFDFC216916B /* STCPayCode.framework */,
-				3D6C52DA64D8B06925CED0675F36EC61 /* Support Files */,
-				BB35E52F985F715C2523A6F20828AAA8 /* ThirdSDK */,
-				7B322004B79E018FF83878EAF7AF4AED /* WeixinApiManager */,
-			);
-			name = STCPaySDK;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		AC6570C6CAAC8D53DEAA13613F33D744 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FC495EACD34538E6F9598879805365F5 /* Res.bundle */,
-			);
-			name = Resources;
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		B251EF757C90C32653766B7B220E6E92 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				27A1CBF34879C185660127235CC989C5 /* LICENSE */,
-				ED23B23D8C4CB28ACDE1870F8D324AB7 /* README.md */,
-				B721C38D0F76CE9E0E2F6631CF0A3E6F /* STCPaySDK.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		BB28A08F4DE013567B07B20734F52BBC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,50 +306,53 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BB35E52F985F715C2523A6F20828AAA8 /* ThirdSDK */ = {
+		BC4990CAEC2DF4837DF7AAE17D87F94C /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DD694ECAD239F41C533520D7BE2C8083 /* AlipaySDK */,
-				5C24EE57AF91C1DE772CA8EA2F23EB51 /* WechatSDK1.8.2 */,
-			);
-			name = ThirdSDK;
-			path = STCPaySDK/Classes/ThirdSDK;
-			sourceTree = "<group>";
-		};
-		C7895FE442241A1C000490B7F7F41722 /* AlipaySDK.framework */ = {
-			isa = PBXGroup;
-			children = (
-				05C7F64DCB257AB9C80DB4BB5678F92D /* AlipaySDK */,
-				9FC52D42386E3EF03D3A481424049966 /* Headers */,
-			);
-			name = AlipaySDK.framework;
-			path = AlipaySDK.framework;
-			sourceTree = "<group>";
-		};
-		D9398EB464826D94255788F21FAC490E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1A3FD7D3F0A0089442CF361F7D688F0C /* AlipaySDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DD694ECAD239F41C533520D7BE2C8083 /* AlipaySDK */ = {
-			isa = PBXGroup;
-			children = (
-				12698450E916CD6225EC56BC15840689 /* AlipaySDK.bundle */,
-				C7895FE442241A1C000490B7F7F41722 /* AlipaySDK.framework */,
-			);
-			name = AlipaySDK;
-			path = AlipaySDK;
-			sourceTree = "<group>";
-		};
-		E0067CCBF345918E9A13A854927C4A4C /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A05D0C58D5AA2F1D46E81927A412AC27 /* STCPaySDK */,
+				15829D35C1CD5FC3BDE7012593FDE4B8 /* STCPaySDK */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C495E49C2123C219182EC40F8A812247 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F0DC7510137BFE8AEA9BDB90DA4CDF39 /* LICENSE */,
+				89F141533CA493E3D59357F49092EDBA /* README.md */,
+				B2E1C77F3801CD88B31E0DB9D3AB61A3 /* STCPaySDK.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		D34B16984E20B33D30823914C57DBC13 /* STCPayCode.framework */ = {
+			isa = PBXGroup;
+			children = (
+				0EC071D8FEF8B299E771647AD22D50D9 /* Versions */,
+			);
+			name = STCPayCode.framework;
+			path = STCPaySDK/Classes/STCPayCode.framework;
+			sourceTree = "<group>";
+		};
+		D58A42C8D6FF8179D76DF83811D6CF8B /* WechatSDK1.8.2 */ = {
+			isa = PBXGroup;
+			children = (
+				1319D85D012A179B4DEF048BB51DC56C /* libWeChatSDK.a */,
+				C00FE32B97ECD6E175B7C21930C13ABE /* WechatAuthSDK.h */,
+				26ED3061EDF977CB88D96AFA2F43725E /* WXApi.h */,
+				89985A4461C098195208E6F4E424BED0 /* WXApiObject.h */,
+			);
+			name = WechatSDK1.8.2;
+			path = WechatSDK1.8.2;
+			sourceTree = "<group>";
+		};
+		E306397EE16A219295C135D64FBAB20F /* WeixinApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				A039FF117471BA1734F8582A2E0AC54A /* WeixinApiManager.h */,
+				D91E12A58CA4DA6CC81F476CE5D8549B /* WeixinApiManager.m */,
+			);
+			name = WeixinApiManager;
+			path = STCPaySDK/Classes/WeixinApiManager;
 			sourceTree = "<group>";
 		};
 		E6D73B7CE03010A96842F70C454B6066 /* Pods-STCPaySDK_Example */ = {
@@ -483,29 +368,6 @@
 			);
 			name = "Pods-STCPaySDK_Example";
 			path = "Target Support Files/Pods-STCPaySDK_Example";
-			sourceTree = "<group>";
-		};
-		F1E1715ECA1AE47BDCE00D8FB1D34D13 /* Versions */ = {
-			isa = PBXGroup;
-			children = (
-				982F5468ED9625DAFBA48AAD7AFD094E /* A */,
-			);
-			name = Versions;
-			path = Versions;
-			sourceTree = "<group>";
-		};
-		FC495EACD34538E6F9598879805365F5 /* Res.bundle */ = {
-			isa = PBXGroup;
-			children = (
-				D95B2D33B5C557ADAE3A754868DD7569 /* nav_close@2x.png */,
-				B9AE0C4EDF11D9CEA88A905E227D45A1 /* nav_close@3x.png */,
-				FE6A75AEC350E28CD693B8DC5B637FFA /* nav_return@2x.png */,
-				BFED367F2E59EBF6260FE4438C1C7FE2 /* nav_return@3x.png */,
-				9B37DF4DE4A604EF8587C84DC45DA5FB /* Root.plist */,
-				5FFA9715D68D1159C19B0826465AAC6B /* Root.strings */,
-			);
-			name = Res.bundle;
-			path = Res.bundle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -553,7 +415,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E82ECF254A580984FD0F6A4060C19993 /* Build configuration list for PBXNativeTarget "STCPaySDK" */;
 			buildPhases = (
-				9CB1931519E53C085AB2B95AA45652B9 /* Sources */,
+				47F2B9279D0E7E849CE11E0BED2E941A /* Sources */,
 				F70B596C3E657A687DC8D87A6512BE8D /* Frameworks */,
 				543F9A2C06DA70F60EBB7862C1C98C3D /* Headers */,
 			);
@@ -612,36 +474,21 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		47F2B9279D0E7E849CE11E0BED2E941A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D78A492E84A975B5C0ED28C32D71ADCC /* libWeChatSDK.a in Sources */,
+				866637C005BD0C1786B9D5BF68ADCA42 /* STCPaySDK-dummy.m in Sources */,
+				59F909F292E35FA74415A63CB7B15F9C /* WeixinApiManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		534ED4DCE4EE3C4B08449BAE530AC147 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FCDD9EAC16C57B098ACC5E19D754853E /* Pods-STCPaySDK_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CB1931519E53C085AB2B95AA45652B9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7FE696D678C0D740F0C677078B92EA8F /* AlipaySDK in Sources */,
-				99FA26C9696C1F136561841A4971116C /* bar@2x.png in Sources */,
-				26A0C95305F7CFB48B0E71BAEC70C007 /* libWeChatSDK.a in Sources */,
-				0470AB4596F3612AE67EA6150B4507B5 /* nav_close@2x.png in Sources */,
-				7D2F677E4A24B1B0DAB4C1CAADC1781E /* nav_close@3x.png in Sources */,
-				879DFB14B321F1C904A6D0E6F6628205 /* nav_return@2x.png in Sources */,
-				9AC072FD9A96F6399FD5B5969AF8931E /* nav_return@3x.png in Sources */,
-				AF1799146A3C8A36130188CEE60C626A /* README.txt in Sources */,
-				4BF16EDF5050EF4BE470F06D784B46FB /* refresh@2x.png in Sources */,
-				BB0D64EF4A67BE9BFBAB88EEF02557AC /* refresh_click@2x.png in Sources */,
-				1AF4A49543625026F586180A1D9FCB39 /* Root.plist in Sources */,
-				CB4F04ACF63CC4702E5740E8B87CE2EC /* Root.strings in Sources */,
-				47082517A4B9A2C0CD82620B4679CF83 /* shutdown@2x.png in Sources */,
-				D3D50451DC630FDD22163BE8ECF3F84D /* shutdown_click@2x.png in Sources */,
-				25BCB5E54478D334C1C3BCC95D3B76F6 /* STCPayCode in Sources */,
-				0F34E7C26039EC12F291E9512666FEF5 /* STCPayCode in Sources */,
-				0F4E1F50AD7A0A137D767A223773A8A2 /* STCPaySDK-dummy.m in Sources */,
-				A490F4B1471B21EC5B5C6CEF549ACBB3 /* WeixinApiManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,18 +510,6 @@
 			targetProxy = EA3D7CCDAD5F9B6557610A1BF0D213C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5FFA9715D68D1159C19B0826465AAC6B /* Root.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7FD2672E4508B04855F85A3F12A0C129 /* Root.strings */,
-			);
-			name = Root.strings;
-			path = .;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		091DF832F0AA2F625632A3F909E94D46 /* Release */ = {
@@ -778,7 +613,7 @@
 		};
 		89760131E2CA2D72F99C21CAED3B2C47 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76734533452C12D47CC598C24E655845 /* STCPaySDK.xcconfig */;
+			baseConfigurationReference = 5C5DFE411327203E9CB827E8FA3613AB /* STCPaySDK.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -800,7 +635,7 @@
 		};
 		B4F8950F4FD4CDE56816005DAAC0914B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76734533452C12D47CC598C24E655845 /* STCPaySDK.xcconfig */;
+			baseConfigurationReference = 5C5DFE411327203E9CB827E8FA3613AB /* STCPaySDK.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
