@@ -43,7 +43,7 @@ s.source_files = 'STCPaySDK/Classes/**/*','STCPaySDK/Classes/*'
     s.libraries             = 'z', 'c++', 'sqlite3'
     s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
   
-    s.public_header_files = 'STCPaySDK/Classes/STCPayCode.framework/Headers/STCPayManager.h'
+    s.public_header_files = 'STCPaySDK/Classes/STCPayCode.framework/Headers/STCPayManager.h','STCPaySDK/Classes/**/*.h'
     s.ios.vendored_libraries = 'STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a',
     s.ios.vendored_frameworks = 'STCPaySDK/Classes/STCPayCode.framework'
 #s.ios.vendored_frameworks = 'STCPaySDK/Classes/ThirdSDK/AlipaySDK/AlipaySDK.framework','STCPaySDK/Classes/STCPayCode.framework'
