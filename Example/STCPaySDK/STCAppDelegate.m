@@ -8,7 +8,7 @@
 
 #import "STCAppDelegate.h"
 //#import <stc/STCPayManager.h>
-
+//#import <<#header#>>
 @implementation STCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

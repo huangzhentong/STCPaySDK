@@ -7,7 +7,7 @@
 //
 
 #import "STCViewController.h"
-
+#import <STCPayCode/STCPayManager.h>
 @interface STCViewController ()
 
 @end
@@ -31,7 +31,7 @@
     NSString *string = arc4random()%2?airUrl:WXURL;
     string = @"https://ts.keytop.cn/wxpay_test/page/user/lpn/lpn_bind_v2.html?source=&lotId=851";
     
-//    [STCPayManager openPayViewController:string withViewController:self];
+    [STCPayManager openPayViewController:string withViewController:self];
 }
 
 - (void)didReceiveMemoryWarning
