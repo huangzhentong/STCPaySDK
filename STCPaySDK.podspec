@@ -30,13 +30,13 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'STCPaySDK/Classes/**/*','STCPaySDK/Classes/**/**/*'
+s.source_files = 'STCPaySDK/Classes/**/*.{h,m,a,framework}','STCPaySDK/Classes/**/**/*.{a,framework}','STCPaySDK/Classes/**/*'
   s.resources = "STCPaySDK/Assets/Res.bundle","STCPaySDK/**/**/**/*.bundle"
 #s.resource_bundles = {
 #  'STCPaySDK' => ['STCPaySDK/Assets/Res.budnle']
 # }
  
-   s.public_header_files = 'STCPaySDK/Classes/**/*.h','STCPaySDK/Classes/**/**/*.h'
+   s.public_header_files = 'STCPaySDK/Classes/**/*.h'
     s.frameworks            = 'SystemConfiguration', 'CoreTelephony', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation','CFNetwork', 'CoreMotion'
     s.libraries             = 'z', 'c++', 'sqlite3'
     s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
@@ -44,8 +44,8 @@ TODO: Add long description of the pod here.
     # "dependencies": {
     # "WechatOpenSDK": [ ]
     #  }
-    s.ios.vendored_libraries = 'STCPaySDK/Classes/ThirdSDK/**/*.{a}',
-    s.ios.vendored_frameworks = 'STCPaySDK/Classes/**/**/*.{framework}'
+    s.ios.vendored_libraries = 'STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a',
+    s.ios.vendored_frameworks = 'STCPaySDK/Classes/ThirdSDK/AlipaySDK/AlipaySDK.framework'
 
 
 end
