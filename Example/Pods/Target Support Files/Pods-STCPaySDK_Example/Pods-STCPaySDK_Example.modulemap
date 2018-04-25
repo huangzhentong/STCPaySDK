@@ -1,6 +1,0 @@
-framework module Pods_STCPaySDK_Example {
-  umbrella header "Pods-STCPaySDK_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

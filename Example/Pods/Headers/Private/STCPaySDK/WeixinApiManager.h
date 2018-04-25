@@ -1,1 +1,1 @@
-../../../../../STCPaySDK/Classes/Manager/WeixinApiManager/WeixinApiManager.h
+../../../../../STCPaySDK/Classes/WeixinApiManager/WeixinApiManager.h

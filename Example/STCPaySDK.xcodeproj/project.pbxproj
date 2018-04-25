@@ -65,7 +65,7 @@
 		7CBE768EA362A92C24FC6FA9 /* Pods-STCPaySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STCPaySDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STCPaySDK_Example/Pods-STCPaySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F3AFB9EFE1D12CBB6237E49 /* libPods-STCPaySDK_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-STCPaySDK_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0DF485BC36611B1B8585813 /* STCPaySDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = STCPaySDK.podspec; path = ../STCPaySDK.podspec; sourceTree = "<group>"; };
+		C0DF485BC36611B1B8585813 /* STCPaySDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = STCPaySDK.podspec; path = ../STCPaySDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FE9665A74562A1FCE0C64115 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -325,11 +325,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-STCPaySDK_Example/Pods-STCPaySDK_Example-resources.sh",
-				"${PODS_ROOT}/../../STCPaySDK/Assets/Res.bundle",
+				"${PODS_ROOT}/../../STCPaySDK/Classes/STCPayCode.framework/Versions/A/Resources/Res.bundle",
+				"${PODS_ROOT}/../../STCPaySDK/Classes/ThirdSDK/AlipaySDK/AlipaySDK.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Res.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlipaySDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

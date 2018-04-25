@@ -1,1 +1,0 @@
-../../../../../STCPaySDK/Classes/Manager/STCWKWebViewPanelManager.h

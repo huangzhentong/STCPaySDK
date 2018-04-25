@@ -7,8 +7,7 @@
 //
 
 #import "STCViewController.h"
-#import <STCPaySDK/STCThirdSDKManager.h>
-#import <STCPaySDK/STCPayManager.h>
+
 @interface STCViewController ()
 
 @end
@@ -19,7 +18,7 @@
 {
     [super viewDidLoad];
     //支付宝
-    [STCPayManager setAliPayScheme:@"zhifubao"];
+//    [STCPayManager setAliPayScheme:@"zhifubao"];
     
     
 	// Do any additional setup after loading the view, typically from a nib.
@@ -32,7 +31,7 @@
     NSString *string = arc4random()%2?airUrl:WXURL;
     string = @"https://ts.keytop.cn/wxpay_test/page/user/lpn/lpn_bind_v2.html?source=&lotId=851";
     
-    [STCPayManager openPayViewController:string withViewController:self];
+//    [STCPayManager openPayViewController:string withViewController:self];
 }
 
 - (void)didReceiveMemoryWarning

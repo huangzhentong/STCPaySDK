@@ -84,10 +84,12 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/../../STCPaySDK/Assets/Res.bundle"
+  install_resource "${PODS_ROOT}/../../STCPaySDK/Classes/STCPayCode.framework/Versions/A/Resources/Res.bundle"
+  install_resource "${PODS_ROOT}/../../STCPaySDK/Classes/ThirdSDK/AlipaySDK/AlipaySDK.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/../../STCPaySDK/Assets/Res.bundle"
+  install_resource "${PODS_ROOT}/../../STCPaySDK/Classes/STCPayCode.framework/Versions/A/Resources/Res.bundle"
+  install_resource "${PODS_ROOT}/../../STCPaySDK/Classes/ThirdSDK/AlipaySDK/AlipaySDK.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

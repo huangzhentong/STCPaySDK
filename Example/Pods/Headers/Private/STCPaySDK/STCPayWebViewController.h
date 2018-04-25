@@ -1,1 +1,0 @@
-../../../../../STCPaySDK/Classes/ViewController/STCPayWebViewController.h
