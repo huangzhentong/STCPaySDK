@@ -71,7 +71,7 @@ s.resource_bundles = {
         #ss.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
         #ss.source_files = 'STCPaySDK/Classes/WeixinApiManager/*.{h,m}'
         #ss.preserve_paths = "STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a"
-        ss.dependency 'AlipaySDK_MI'
+        ss.dependency 'AlipaySDK_No_UTDID'
     end
 
     
