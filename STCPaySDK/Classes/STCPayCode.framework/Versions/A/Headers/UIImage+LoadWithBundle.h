@@ -10,4 +10,7 @@
 @interface UIImage (LoadWithBundle)
 
 +(UIImage*)imageWithBundle:(NSBundle*)bundel withName:(NSString*)name;
+
++(UIImage*)imageWithName:(NSString *)name withBundle:(NSString*)bundle;
+
 @end

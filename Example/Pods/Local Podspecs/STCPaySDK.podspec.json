@@ -21,6 +21,11 @@
     "STCPaySDK/Classes/**/*",
     "STCPaySDK/Classes/*"
   ],
+  "resource_bundles": {
+    "STCPaySDK": [
+      "STCPaySDK/Assets/*.{bundle,png}"
+    ]
+  },
   "frameworks": [
     "SystemConfiguration",
     "CoreTelephony",
@@ -41,7 +46,10 @@
   "pod_target_xcconfig": {
     "OTHER_LDFLAGS": "-all_load"
   },
-  "public_header_files": "STCPaySDK/Classes/STCPayCode.framework/Headers/STCPayManager.h",
+  "public_header_files": [
+    "STCPaySDK/Classes/STCPaySDK.framework/Headers/STCPayManager.h",
+    "STCPaySDK/Classes/**/*.h"
+  ],
   "ios": {
     "vendored_frameworks": "STCPaySDK/Classes/STCPayCode.framework",
     "vendored_libraries": [

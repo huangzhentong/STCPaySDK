@@ -7,8 +7,13 @@
 //
 
 #import "STCViewController.h"
-#import <STCPayCode/STCPayManager.h>
+//#import <STCPaySDK/STCPayManager.h>
+//#import <STCPaySDK/STCPaySDK/STCPayManager.h>
+#import <STCPaySDK/STCPayCode/STCPayManager.h>
 @interface STCViewController ()
+{
+    UIImageView *imageView;
+}
 
 @end
 
@@ -17,6 +22,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    imageView = [UIImageView new];
+    imageView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:imageView];
+    imageView.frame = CGRectMake(100,100, 100, 100);
+    
+    imageView.image = [UIImage imageNamed:[@"STCPaySDK.bundle/Res.bundle" stringByAppendingPathComponent:@"nav_close"]];
     //支付宝
 //    [STCPayManager setAliPayScheme:@"zhifubao"];
     
@@ -31,7 +42,22 @@
     NSString *string = arc4random()%2?airUrl:WXURL;
     string = @"https://ts.keytop.cn/wxpay_test/page/user/lpn/lpn_bind_v2.html?source=&lotId=851";
     
+    NSBundle *_bundle = nil;
+    NSURL *bundleURL =  [[NSBundle bundleForClass:[STCPayManager class]] URLForResource:@"STCPayCode" withExtension:@"bundle"];
+    if (bundleURL) {
+        _bundle = [NSBundle bundleWithURL:bundleURL];
+    }
+    else
+    {
+        _bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[STCPayManager class]] pathForResource:@"Res" ofType:@"bundle"]];
+        NSBundle *bundle =  [NSBundle bundleForClass:[STCPayManager class]];
+        NSString *path = [bundle.resourcePath stringByAppendingString:@"/STCPaySDK.bundle/Res.bundle"];
+        _bundle = [NSBundle bundleWithPath:path];
+    }
+    [@"Frameworks/STCPayCode.framework/Res.bundle" stringByAppendingPathComponent:@"name"];
     [STCPayManager openPayViewController:string withViewController:self];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

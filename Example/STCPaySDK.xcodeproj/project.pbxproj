@@ -325,13 +325,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-STCPaySDK_Example/Pods-STCPaySDK_Example-resources.sh",
-				"${PODS_ROOT}/../../STCPaySDK/Classes/STCPayCode.framework/Versions/A/Resources/Res.bundle",
-				"${PODS_ROOT}/../../STCPaySDK/Classes/ThirdSDK/AlipaySDK/AlipaySDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/STCPaySDK/STCPaySDK.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Res.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlipaySDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/STCPaySDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
