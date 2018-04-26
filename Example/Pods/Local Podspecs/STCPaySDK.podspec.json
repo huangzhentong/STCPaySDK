@@ -1,6 +1,6 @@
 {
   "name": "STCPaySDK",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "summary": "A short description of STCPaySDK.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/zhentong.huang/STCPaySDK",
@@ -11,8 +11,8 @@
     "zhentong.huang": "181310067@qq.com"
   },
   "source": {
-    "git": "/Users/kt-stc08/Desktop/STCPaySDK/STCPaySDK",
-    "tag": "1.0.3"
+    "git": "https://huangzhentong@dev365.keytop.cn/bitbucket/scm/stcpays/stcpaysdk.git",
+    "tag": "1.0.5"
   },
   "platforms": {
     "ios": "9.0"
@@ -47,7 +47,7 @@
     {
       "name": "ALIPay",
       "dependencies": {
-        "AlipaySDK_MI": [
+        "AlipaySDK_No_UTDID": [
 
         ]
       }

@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## AlipaySDK_MI
+## AlipaySDK_No_UTDID
 
 MIT License
 
@@ -48,6 +48,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+
+## UTDID
+
+阿里悟空 © 2014. See http://m.laiwang.com/market/laiwang/wukong-serviceagreement.php
 
 ## WechatOpenSDK
 

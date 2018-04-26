@@ -39,10 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008A71C3F9094B33E07BAB7B1A2E8332 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = AlipaySDK/AlipaySDK.framework; sourceTree = "<group>"; };
 		0460F4D71120F0D883249D0E4269748E /* STCPaySDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STCPaySDK-prefix.pch"; sourceTree = "<group>"; };
-		0DA70C62AFAE7D9E3D5646DEA35F6956 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = WechatSDK1.8.2/WXApiObject.h; sourceTree = "<group>"; };
-		160E9860CFA6152B9BB2C339126DE984 /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = WechatSDK1.8.2/WechatAuthSDK.h; sourceTree = "<group>"; };
+		0E785BF89BC33D67EC3B5514136A894A /* AlipaySDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = AlipaySDK_No_UTDID/AlipaySDK.bundle; sourceTree = "<group>"; };
 		1B476A8009383C467C19F96D1E058C4D /* Pods-STCPaySDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STCPaySDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1B77F672EA4FAA7991CC8878076541F9 /* libSTCPaySDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSTCPaySDK.a; path = libSTCPaySDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C22A972ECA044A9BC89DCCE1551A17 /* Pods-STCPaySDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STCPaySDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -51,12 +49,13 @@
 		3371EE44E051B45A8CD853F4D227DEC2 /* libPods-STCPaySDK_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-STCPaySDK_Tests.a"; path = "libPods-STCPaySDK_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		348955ECC14CA83CF176F7372C24F939 /* Pods-STCPaySDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STCPaySDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3905A77CA9BEA7F9216EC9015E997376 /* libPods-STCPaySDK_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-STCPaySDK_Example.a"; path = "libPods-STCPaySDK_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F66A7A621656BBB60116E768196FC03 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = WechatSDK1.8.2/WXApiObject.h; sourceTree = "<group>"; };
 		465D19D7009781DCAC001A3B7D925DC0 /* Pods-STCPaySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STCPaySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		567A25FD4D02AC482CDD517D0EEA1798 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = WechatSDK1.8.2/WXApi.h; sourceTree = "<group>"; };
 		5A00CBE508D7EBC73D5900E9E5C925A3 /* STCPaySDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STCPaySDK-dummy.m"; sourceTree = "<group>"; };
 		5D843C1643CE765A08377A603CBEB27D /* WeixinApiManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeixinApiManager.h; path = STCPaySDK/Classes/WeixinApiManager/WeixinApiManager.h; sourceTree = "<group>"; };
+		68C9A045D7F7D751D5AC7B0D7085A007 /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
 		69005CC15374B6C505DA699CDFD791FA /* Pods-STCPaySDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STCPaySDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		7D9EB99BB95DCD35715BC6F425290691 /* AlipaySDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = AlipaySDK/AlipaySDK.bundle; sourceTree = "<group>"; };
+		751A86EB0A1567B830A96DF61939CF2F /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = WechatSDK1.8.2/libWeChatSDK.a; sourceTree = "<group>"; };
 		878ADAB25D5E840F965C8C0689F22F56 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		931F778EA680022D5BEC6F3357725943 /* STCPayCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = STCPayCode.framework; path = STCPaySDK/Classes/STCPayCode.framework; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -65,14 +64,16 @@
 		A79F1211F48BD5793677ABE12730EE05 /* Pods-STCPaySDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-STCPaySDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		AA6B86AFFB7226679810CC76EC579442 /* STCPaySDK.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = STCPaySDK.bundle; path = "STCPaySDK-STCPaySDK.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1EF38765BB69452C304E8A178AE4FC4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B2B053B5B025C939ACCBF5491DEE80F6 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = WechatSDK1.8.2/WXApi.h; sourceTree = "<group>"; };
 		B47543FB34127C9D73BCDAE72A5638E5 /* Pods-STCPaySDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-STCPaySDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C42544EAF889B2F707A01C8E9A593F74 /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = WechatSDK1.8.2/WechatAuthSDK.h; sourceTree = "<group>"; };
 		C702AABE5853192D5DC5315EB266225B /* WeixinApiManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WeixinApiManager.m; path = STCPaySDK/Classes/WeixinApiManager/WeixinApiManager.m; sourceTree = "<group>"; };
 		C724E0DA1EAB308037197E1782F2F875 /* Pods-STCPaySDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-STCPaySDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		C8C7E236AE629F556BEA7EC8E6E4B386 /* STCPaySDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STCPaySDK.xcconfig; sourceTree = "<group>"; };
-		C997EE5639BB206CEFFF0C4E5546978E /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = WechatSDK1.8.2/libWeChatSDK.a; sourceTree = "<group>"; };
 		D029961F0F2E53811FDF7215A21D7AA1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		D40F489467876E8D329C1F6E63FC49E4 /* Pods-STCPaySDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-STCPaySDK_Tests-resources.sh"; sourceTree = "<group>"; };
 		D50935C4D8ACDCE7FC231DE4A4A7DEEB /* ResourceBundle-STCPaySDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-STCPaySDK-Info.plist"; sourceTree = "<group>"; };
+		DB3C3D0BE5761C52C392358B3E004FE8 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = AlipaySDK_No_UTDID/AlipaySDK.framework; sourceTree = "<group>"; };
 		E2363D0BF996F1C5BC26F3A3BB83102C /* Res.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Res.bundle; path = STCPaySDK/Assets/Res.bundle; sourceTree = "<group>"; };
 		E495685E4CC9B9FA18504D112BCCFA08 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		F03820ABE85B733AA12D00AB44774792 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -119,18 +120,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		048604D60D79271C98FB52E9E2F87FAC /* WechatOpenSDK */ = {
-			isa = PBXGroup;
-			children = (
-				160E9860CFA6152B9BB2C339126DE984 /* WechatAuthSDK.h */,
-				567A25FD4D02AC482CDD517D0EEA1798 /* WXApi.h */,
-				0DA70C62AFAE7D9E3D5646DEA35F6956 /* WXApiObject.h */,
-				EDBF429A866DCC6DF21286B1B271FF8D /* Frameworks */,
-			);
-			name = WechatOpenSDK;
-			path = WechatOpenSDK;
-			sourceTree = "<group>";
-		};
 		13C79BD06C5463B06FC580DBCED4180C /* STCPaySDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,15 +149,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		21CBB9EBF3A97F91600795C2C4118B9C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				63AE10F26AD43C0CB43F049FB794ADF1 /* AlipaySDK_MI */,
-				048604D60D79271C98FB52E9E2F87FAC /* WechatOpenSDK */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		36069F640F8D4459D3EB4FEE536DD4B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +160,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3FFADD00EB9DAB92BC9660747E152F8C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E785BF89BC33D67EC3B5514136A894A /* AlipaySDK.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		5506E5C59F2289519501C0F2B6A22C18 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,16 +177,6 @@
 				E495685E4CC9B9FA18504D112BCCFA08 /* WebKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		63AE10F26AD43C0CB43F049FB794ADF1 /* AlipaySDK_MI */ = {
-			isa = PBXGroup;
-			children = (
-				9A3F35111AD9F174C3226E60AA497FA1 /* Frameworks */,
-				C19C38B0A81E2D745208F19EDD66A7AE /* Resources */,
-			);
-			name = AlipaySDK_MI;
-			path = AlipaySDK_MI;
 			sourceTree = "<group>";
 		};
 		73127E8DEDA44380D0552B59A8B8E638 /* Core */ = {
@@ -227,10 +205,18 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				9FFC2E1FF25425FA61FF65C179FFD94D /* Development Pods */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				21CBB9EBF3A97F91600795C2C4118B9C /* Pods */,
+				F3B52874D2672BA2E60B7FAC819EAE04 /* Pods */,
 				36069F640F8D4459D3EB4FEE536DD4B0 /* Products */,
 				88E94DB3682F7C5FF781A769841CD9ED /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8671B3D54C0D36BD7CDEE87CAC325395 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68C9A045D7F7D751D5AC7B0D7085A007 /* UTDID.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		88E94DB3682F7C5FF781A769841CD9ED /* Targets Support Files */ = {
@@ -240,6 +226,24 @@
 				9A242AF6F2B840AF9ECB168505CAE7BA /* Pods-STCPaySDK_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8CB2D90749243079B192C45653E9907B /* AlipaySDK_No_UTDID */ = {
+			isa = PBXGroup;
+			children = (
+				947AC55EBA6670D499BCC40EB2CB78A6 /* Frameworks */,
+				3FFADD00EB9DAB92BC9660747E152F8C /* Resources */,
+			);
+			name = AlipaySDK_No_UTDID;
+			path = AlipaySDK_No_UTDID;
+			sourceTree = "<group>";
+		};
+		947AC55EBA6670D499BCC40EB2CB78A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB3C3D0BE5761C52C392358B3E004FE8 /* AlipaySDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9A242AF6F2B840AF9ECB168505CAE7BA /* Pods-STCPaySDK_Tests */ = {
@@ -257,20 +261,20 @@
 			path = "Target Support Files/Pods-STCPaySDK_Tests";
 			sourceTree = "<group>";
 		};
-		9A3F35111AD9F174C3226E60AA497FA1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				008A71C3F9094B33E07BAB7B1A2E8332 /* AlipaySDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		9FFC2E1FF25425FA61FF65C179FFD94D /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
 				13C79BD06C5463B06FC580DBCED4180C /* STCPaySDK */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A01C6207785D80ADC37193E178A79D27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				751A86EB0A1567B830A96DF61939CF2F /* libWeChatSDK.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A2C736330D7E5520434BAB0D39993716 /* Pod */ = {
@@ -281,6 +285,18 @@
 				FE5CBE600714EB7012CDA0182255B966 /* STCPaySDK.podspec */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		A790B641162BBCAAC5B3B095EAEE18D8 /* WechatOpenSDK */ = {
+			isa = PBXGroup;
+			children = (
+				C42544EAF889B2F707A01C8E9A593F74 /* WechatAuthSDK.h */,
+				B2B053B5B025C939ACCBF5491DEE80F6 /* WXApi.h */,
+				3F66A7A621656BBB60116E768196FC03 /* WXApiObject.h */,
+				A01C6207785D80ADC37193E178A79D27 /* Frameworks */,
+			);
+			name = WechatOpenSDK;
+			path = WechatOpenSDK;
 			sourceTree = "<group>";
 		};
 		AE43DBE669362D038E848B6C827EC753 /* Frameworks */ = {
@@ -300,12 +316,13 @@
 			name = WXPay;
 			sourceTree = "<group>";
 		};
-		C19C38B0A81E2D745208F19EDD66A7AE /* Resources */ = {
+		DF9BD872CB13C3204FF548F1582EB202 /* UTDID */ = {
 			isa = PBXGroup;
 			children = (
-				7D9EB99BB95DCD35715BC6F425290691 /* AlipaySDK.bundle */,
+				8671B3D54C0D36BD7CDEE87CAC325395 /* Frameworks */,
 			);
-			name = Resources;
+			name = UTDID;
+			path = UTDID;
 			sourceTree = "<group>";
 		};
 		E6D73B7CE03010A96842F70C454B6066 /* Pods-STCPaySDK_Example */ = {
@@ -323,12 +340,14 @@
 			path = "Target Support Files/Pods-STCPaySDK_Example";
 			sourceTree = "<group>";
 		};
-		EDBF429A866DCC6DF21286B1B271FF8D /* Frameworks */ = {
+		F3B52874D2672BA2E60B7FAC819EAE04 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C997EE5639BB206CEFFF0C4E5546978E /* libWeChatSDK.a */,
+				8CB2D90749243079B192C45653E9907B /* AlipaySDK_No_UTDID */,
+				DF9BD872CB13C3204FF548F1582EB202 /* UTDID */,
+				A790B641162BBCAAC5B3B095EAEE18D8 /* WechatOpenSDK */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

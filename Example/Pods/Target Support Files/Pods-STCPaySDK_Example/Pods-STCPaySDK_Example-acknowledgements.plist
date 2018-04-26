@@ -39,7 +39,7 @@ SOFTWARE.
 			<key>License</key>
 			<string>MIT</string>
 			<key>Title</key>
-			<string>AlipaySDK_MI</string>
+			<string>AlipaySDK_No_UTDID</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -69,6 +69,16 @@ THE SOFTWARE.
 			<string>MIT</string>
 			<key>Title</key>
 			<string>STCPaySDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>阿里悟空 © 2014. See http://m.laiwang.com/market/laiwang/wukong-serviceagreement.php</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>UTDID</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
