@@ -17,45 +17,40 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": [
-    "STCPaySDK/Classes/**/*",
-    "STCPaySDK/Classes/*"
-  ],
   "resource_bundles": {
     "STCPaySDK": [
       "STCPaySDK/Assets/*.{bundle,png}"
     ]
   },
-  "frameworks": [
-    "SystemConfiguration",
-    "CoreTelephony",
-    "QuartzCore",
-    "CoreText",
-    "CoreGraphics",
-    "UIKit",
-    "Foundation",
-    "CFNetwork",
-    "CoreMotion",
-    "WebKit"
-  ],
-  "libraries": [
-    "z",
-    "c++",
-    "sqlite3"
-  ],
-  "pod_target_xcconfig": {
-    "OTHER_LDFLAGS": "-all_load"
-  },
-  "public_header_files": [
-    "STCPaySDK/Classes/STCPaySDK.framework/Headers/STCPayManager.h",
-    "STCPaySDK/Classes/**/*.h"
-  ],
-  "ios": {
-    "vendored_frameworks": "STCPaySDK/Classes/STCPayCode.framework",
-    "vendored_libraries": [
-      "STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a",
-      "STCPaySDK/Classes/STCPayCode.framework"
-    ]
-  },
-  "preserve_paths": "STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a"
+  "subspecs": [
+    {
+      "name": "Core",
+      "ios": {
+        "vendored_frameworks": "STCPaySDK/Classes/STCPayCode.framework"
+      },
+      "frameworks": [
+        "CoreGraphics",
+        "UIKit",
+        "Foundation",
+        "WebKit"
+      ]
+    },
+    {
+      "name": "WXPay",
+      "source_files": "STCPaySDK/Classes/WeixinApiManager/*.{h,m}",
+      "dependencies": {
+        "WechatOpenSDK": [
+
+        ]
+      }
+    },
+    {
+      "name": "ALIPay",
+      "dependencies": {
+        "AlipaySDK_MI": [
+
+        ]
+      }
+    }
+  ]
 }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'STCPaySDK'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'A short description of STCPaySDK.'
 
 # This description is used to generate tags and improve search results.
@@ -32,21 +32,48 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
 #s.source_files = 'STCPaySDK/Classes/**/*.{h,m,a,framework}','STCPaySDK/Classes/**/**/*.{a,framework}','STCPaySDK/Classes/*'
-s.source_files = 'STCPaySDK/Classes/**/*','STCPaySDK/Classes/*'
+#s.source_files = 'STCPaySDK/Classes/**/*','STCPaySDK/Classes/*'
 
 s.resource_bundles = {
     'STCPaySDK' => ['STCPaySDK/Assets/*.{bundle,png}']
  }
  
  #s.public_header_files = 'STCPaySDK/Classes/**/*.h'
-    s.frameworks            = 'SystemConfiguration', 'CoreTelephony', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation','CFNetwork', 'CoreMotion','WebKit'
-    s.libraries             = 'z', 'c++', 'sqlite3'
-    s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
+ #s.frameworks            = 'SystemConfiguration', 'CoreTelephony', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation','CFNetwork', 'CoreMotion','WebKit'
+ #s.libraries             = 'z', 'c++', 'sqlite3'
+ #s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
   
-    s.public_header_files = 'STCPaySDK/Classes/STCPaySDK.framework/Headers/STCPayManager.h','STCPaySDK/Classes/**/*.h'
-    s.ios.vendored_libraries = 'STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a',
-    s.ios.vendored_frameworks = 'STCPaySDK/Classes/STCPayCode.framework'
-#s.ios.vendored_frameworks = 'STCPaySDK/Classes/ThirdSDK/AlipaySDK/AlipaySDK.framework','STCPaySDK/Classes/STCPayCode.framework'
-    s.preserve_paths = "STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a"
+  #s.public_header_files = 'STCPaySDK/Classes/STCPaySDK.framework/Headers/STCPayManager.h','STCPaySDK/Classes/**/*.h'
+  #s.ios.vendored_libraries = 'STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a',
+  #s.ios.vendored_frameworks = 'STCPaySDK/Classes/STCPayCode.framework'
+
+#s.preserve_paths = "STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a"
+    
+    s.subspec 'Core' do |core|
+        core.ios.vendored_frameworks = 'STCPaySDK/Classes/STCPayCode.framework'
+        # core.source_files = 'STCPaySDK/Classes/STCPayCode.framework'
+        #core.public_header_files = 'STCPaySDK/Classes/STCPaySDK.framework/Headers/STCPayManager.h'
+        core.frameworks            =  'CoreGraphics', 'UIKit', 'Foundation','WebKit'
+    end
+    
+    
+    s.subspec 'WXPay' do|ss|
+        #ss.vendored_libraries = 'STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a'
+        #ss.libraries             = 'z', 'c++', 'sqlite3'
+        #ss.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
+        ss.source_files = 'STCPaySDK/Classes/WeixinApiManager/*.{h,m}'
+        #ss.preserve_paths = "STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a"
+        ss.dependency 'WechatOpenSDK'
+    end
+    s.subspec 'ALIPay' do|ss|
+        #ss.vendored_libraries = 'STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a'
+        #ss.libraries             = 'z', 'c++', 'sqlite3'
+        #ss.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
+        #ss.source_files = 'STCPaySDK/Classes/WeixinApiManager/*.{h,m}'
+        #ss.preserve_paths = "STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a"
+        ss.dependency 'AlipaySDK_MI'
+    end
+
+    
 
 end

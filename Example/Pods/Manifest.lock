@@ -1,5 +1,15 @@
 PODS:
-  - STCPaySDK (1.0.3)
+  - AlipaySDK_MI (15.5.0)
+  - STCPaySDK (1.0.3):
+    - STCPaySDK/ALIPay (= 1.0.3)
+    - STCPaySDK/Core (= 1.0.3)
+    - STCPaySDK/WXPay (= 1.0.3)
+  - STCPaySDK/ALIPay (1.0.3):
+    - AlipaySDK_MI
+  - STCPaySDK/Core (1.0.3)
+  - STCPaySDK/WXPay (1.0.3):
+    - WechatOpenSDK
+  - WechatOpenSDK (1.8.2)
 
 DEPENDENCIES:
   - STCPaySDK (from `../`)
@@ -9,7 +19,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  STCPaySDK: 4b3220593acf382f6d6ebbe0f35627a39ef1c089
+  AlipaySDK_MI: 5a50b4e9162046b6bfbb7b4a4a5c44b31b8faba0
+  STCPaySDK: 80ec99fe85c0763ddb3a33af806cd900011ca938
+  WechatOpenSDK: 676feec516a11173eafd1fe64b10d27babf28701
 
 PODFILE CHECKSUM: 568b3d9b17582c4727ffbb4bb1aafdb4ee3232a5
 
