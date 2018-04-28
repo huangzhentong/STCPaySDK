@@ -14,7 +14,7 @@
 +(void)setAliPayScheme:(NSString*)appScheme;
 //返回一个ViewController 
 +(UIViewController *)openPayViewController:(NSString *)url;
-//传入一个viewController
+//传入一个viewController vc为空的话使用 windows 的 rootController
 +(void)openPayViewController:(NSString *)url withViewController:(UIViewController*)vc;
 
 //+(BOOL)STC_application:(UIApplication *)application handleOpenURL:(NSURL *)url;

@@ -85,11 +85,11 @@ EOM
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/AlipaySDK_No_UTDID/AlipaySDK_No_UTDID/AlipaySDK.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/STCPaySDK/STCPaySDK.bundle"
+  install_resource "${PODS_ROOT}/../../STCPaySDK/Assets/STCResources.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/AlipaySDK_No_UTDID/AlipaySDK_No_UTDID/AlipaySDK.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/STCPaySDK/STCPaySDK.bundle"
+  install_resource "${PODS_ROOT}/../../STCPaySDK/Assets/STCResources.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

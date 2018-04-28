@@ -42,19 +42,7 @@
     NSString *string = arc4random()%2?airUrl:WXURL;
     string = @"https://ts.keytop.cn/wxpay_test/page/user/lpn/lpn_bind_v2.html?source=&lotId=851";
     
-    NSBundle *_bundle = nil;
-    NSURL *bundleURL =  [[NSBundle bundleForClass:[STCPayManager class]] URLForResource:@"STCPayCode" withExtension:@"bundle"];
-    if (bundleURL) {
-        _bundle = [NSBundle bundleWithURL:bundleURL];
-    }
-    else
-    {
-        _bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[STCPayManager class]] pathForResource:@"Res" ofType:@"bundle"]];
-        NSBundle *bundle =  [NSBundle bundleForClass:[STCPayManager class]];
-        NSString *path = [bundle.resourcePath stringByAppendingString:@"/STCPaySDK.bundle/Res.bundle"];
-        _bundle = [NSBundle bundleWithPath:path];
-    }
-    [@"Frameworks/STCPayCode.framework/Res.bundle" stringByAppendingPathComponent:@"name"];
+  
     [STCPayManager openPayViewController:string withViewController:self];
     
     
