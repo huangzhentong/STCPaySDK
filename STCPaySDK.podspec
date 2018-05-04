@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'STCPaySDK'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = 'A short description of STCPaySDK.'
 
   s.description      = <<-DESC
@@ -31,6 +31,7 @@ TODO: Add long description of the pod here.
     
     s.subspec 'Core' do |core|
         core.ios.vendored_frameworks = 'STCPaySDK/Classes/STCPayCode.framework'
+        #core.source_files = 'STCPaySDK/Classes/SDK/**/*.{h,m}'
         # core.source_files = 'STCPaySDK/Classes/STCPayCode.framework'
         #core.public_header_files = 'STCPaySDK/Classes/STCPaySDK.framework/Headers/STCPayManager.h'
         core.frameworks            =  'CoreGraphics', 'UIKit', 'Foundation','WebKit'

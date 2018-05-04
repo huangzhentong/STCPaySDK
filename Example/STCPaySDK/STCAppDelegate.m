@@ -7,8 +7,8 @@
 //
 
 #import "STCAppDelegate.h"
-//#import <stc/STCPayManager.h>
-//#import <<#header#>>
+#import <STCPaySDK/STCPayManager.h>
+
 @implementation STCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -31,7 +31,7 @@
 
 -(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
-//    [STCPayManager STC_application:app openURL:url options:options];
+    [STCPayManager STC_application:app openURL:url options:options];
     return YES;
 }
 
