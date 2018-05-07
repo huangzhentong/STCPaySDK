@@ -12,6 +12,6 @@
 @interface STCPayWebViewController : UIViewController
 @property(nonatomic,copy)NSString *url;
 @property(nonatomic,copy)NSString *UA;
-@property(nonatomic,copy)void(^block)(void);
+@property(nonatomic,copy)void(^block)(BOOL isPaySuccess);
 -(instancetype)initWithObject:(id)object;
 @end

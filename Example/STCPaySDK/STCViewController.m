@@ -9,7 +9,8 @@
 #import "STCViewController.h"
 //#import <STCPaySDK/STCPayManager.h>
 //#import <STCPaySDK/STCPaySDK/STCPayManager.h>
-#import <STCPaySDK/STCPayManager.h>
+//#import <STCPaySDK/STCPayManager.h>
+#import <STCPayCode/STCPayManager.h>
 @interface STCViewController ()
 {
     UIImageView *imageView;
