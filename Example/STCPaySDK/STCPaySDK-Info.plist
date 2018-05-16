@@ -28,9 +28,7 @@
 			<key>CFBundleURLName</key>
 			<string>weixin</string>
 			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>wx88f62889b30261ac</string>
-			</array>
+			<array/>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
@@ -40,6 +38,14 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>zhifubao</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wx05ab716ccca1f62e</string>
 			</array>
 		</dict>
 	</array>

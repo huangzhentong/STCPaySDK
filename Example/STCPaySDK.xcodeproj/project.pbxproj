@@ -548,7 +548,7 @@
 				INFOPLIST_FILE = "STCPaySDK/STCPaySDK-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.keytop.cqgoodparking;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keytop.cqgoodparking2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -566,7 +566,7 @@
 				INFOPLIST_FILE = "STCPaySDK/STCPaySDK-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.keytop.cqgoodparking;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keytop.cqgoodparking2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

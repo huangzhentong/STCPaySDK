@@ -1,6 +1,6 @@
 {
   "name": "STCPaySDK",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "summary": "A short description of STCPaySDK.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/zhentong.huang/STCPaySDK",
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/huangzhentong/STCPaySDK.git",
-    "tag": "1.0.8"
+    "tag": "1.0.9"
   },
   "platforms": {
     "ios": "9.0"
@@ -21,9 +21,7 @@
   "subspecs": [
     {
       "name": "Core",
-      "ios": {
-        "vendored_frameworks": "STCPaySDK/Classes/STCPayCode.framework"
-      },
+      "source_files": "STCPaySDK/Classes/SDK/**/*.{h,m}",
       "frameworks": [
         "CoreGraphics",
         "UIKit",

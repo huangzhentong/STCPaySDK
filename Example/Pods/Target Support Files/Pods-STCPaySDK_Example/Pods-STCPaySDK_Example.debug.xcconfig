@@ -1,9 +1,9 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) $(PODS_ROOT)/UTDID "${PODS_ROOT}/AlipaySDK_No_UTDID/AlipaySDK_No_UTDID" "${PODS_ROOT}/../../STCPaySDK/Classes" "${PODS_ROOT}/UTDID"
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PODS_ROOT)/UTDID "${PODS_ROOT}/AlipaySDK_No_UTDID/AlipaySDK_No_UTDID" "${PODS_ROOT}/UTDID"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AlipaySDK_No_UTDID" "${PODS_ROOT}/Headers/Public/STCPaySDK" "${PODS_ROOT}/Headers/Public/UTDID" "${PODS_ROOT}/Headers/Public/WechatOpenSDK"
 LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/STCPaySDK" "${PODS_ROOT}/WechatOpenSDK/WechatSDK1.8.2"
 OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AlipaySDK_No_UTDID" -isystem "${PODS_ROOT}/Headers/Public/STCPaySDK" -isystem "${PODS_ROOT}/Headers/Public/UTDID" -isystem "${PODS_ROOT}/Headers/Public/WechatOpenSDK"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"STCPaySDK" -l"WeChatSDK" -l"c++" -l"sqlite3.0" -l"z" -framework "AlipaySDK" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreMotion" -framework "CoreTelephony" -framework "CoreText" -framework "Foundation" -framework "QuartzCore" -framework "STCPayCode" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -framework "UTDID" -framework "WebKit"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"STCPaySDK" -l"WeChatSDK" -l"c++" -l"sqlite3.0" -l"z" -framework "AlipaySDK" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreMotion" -framework "CoreTelephony" -framework "CoreText" -framework "Foundation" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -framework "UTDID" -framework "WebKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

@@ -15,6 +15,7 @@ extern NSString * const STCPayFaieldNotification;                   //支付失�
 //如果需要支付宝支付请到 info.plist 添加相对应用的 Scheme
 +(void)setAliPayScheme:(NSString*)appScheme;
 
+
 //返回一个ViewController  block为返回事件 不需要返回事件的可传nil
 +(STCPayWebViewController*)payViewController:(NSString *)url withBlock:(void(^)(BOOL isPaySuccess))block;
 

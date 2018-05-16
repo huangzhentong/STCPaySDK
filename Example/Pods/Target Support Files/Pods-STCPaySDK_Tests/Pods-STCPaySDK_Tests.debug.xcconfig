@@ -1,4 +1,4 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/AlipaySDK_No_UTDID/AlipaySDK_No_UTDID" "${PODS_ROOT}/../../STCPaySDK/Classes" "${PODS_ROOT}/UTDID"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/AlipaySDK_No_UTDID/AlipaySDK_No_UTDID" "${PODS_ROOT}/UTDID"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AlipaySDK_No_UTDID" "${PODS_ROOT}/Headers/Public/STCPaySDK" "${PODS_ROOT}/Headers/Public/UTDID" "${PODS_ROOT}/Headers/Public/WechatOpenSDK"
 LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/STCPaySDK" "${PODS_ROOT}/WechatOpenSDK/WechatSDK1.8.2"
