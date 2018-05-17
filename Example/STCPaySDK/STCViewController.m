@@ -44,8 +44,12 @@
     NSString *string = arc4random()%2?airUrl:WXURL;
      string = @"https://cloud.keytop.cn/pc/page/payment_confirm.html?parameters=eyJtb2R1bGUiOiJDUCIsImNhdGVnb3J5IjoiUEFSSyIsInBheW1lbnRDb25maWciOiJiZDQ1NDdiZjRkMWY0ZDA0YTAwZjNiMmIwOWMwNjBlOSIsImlubmVyT3JkZXJObyI6IjIwMTgwNTE2Njc1NDgyNSIsInByb2R1Y3Rpb25OYW1lIjoi5YGc6L2m6LS5LemXvVBHMDAwMS3pgJ%2FlgZzovabkupHovablnLoiLCJwcm9kdWN0aW9uRGVzY3JpcHRpb24iOiJf6YCf5YGc6L2m5LqR6L2m5Zy6IiwiZXhwaXJlZFRpbWUiOiIyMDE4LTA1LTE2IDEzOjMzOjQ3IiwiYW1vdW50IjoxLCJzaWduIjoiNTQ2MDdmYTdlNWVmZmRhYTFmNzQwNTMyOGJmNWEzNGQiLCJyZXR1cm5VcmwiOiJodHRwczovL2Nsb3VkLmtleXRvcC5jbi9wYWdlL29yZGVyL2FjY2Vzc19vcmRlcl9wYXlpbmcuaHRtbD9vPTIwMTgwNTE2Njc1NDgyNSZsb3RJZD0xNjMmcGxhdGVObz3pl71QRzAwMDEiLCJjdXN0b21QYXJhbWV0ZXJzIjp7ImxvdElkIjoiMTYzIiwicGxhdGVObyI6IumXvVBHMDAwMSIsInBhcmtpbmdEdXJhdGlvbiI6IiJ9fQ%3D%3D";
     
-  
-    [STCPayManager openPayViewController:string withViewController:self];
+    STCPayWebViewController *pay = [STCPayManager payViewController:string withBlock:nil];
+    UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:pay];
+    
+    [self presentViewController:na animated:YES completion:nil];
+    pay.UA = @"hello";
+//    [STCPayManager openPayViewController:string withViewController:self];
     
     
 }
