@@ -9,8 +9,8 @@
 #import "STCViewController.h"
 //#import <STCPaySDK/STCPayManager.h>
 //#import <STCPaySDK/STCPaySDK/STCPayManager.h>
-#import <STCPaySDK/STCPayManager.h>
-//#import <STCPayCode/STCPayManager.h>
+//#import <STCPaySDK/STCPayManager.h>
+#import <STCPayCode/STCPayManager.h>
 @interface STCViewController ()
 {
     UIImageView *imageView;
@@ -31,7 +31,7 @@
     imageView.image = [UIImage imageNamed:[@"STCPaySDK.bundle/Res.bundle" stringByAppendingPathComponent:@"nav_close"]];
     //支付宝
 //    [STCPayManager setAliPayScheme:@"zhifubao"];
-    [STCPayManager setWxPayScheme:@"weixin"];
+
     
     
 	// Do any additional setup after loading the view, typically from a nib.

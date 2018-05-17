@@ -1,14 +1,14 @@
 PODS:
   - AlipaySDK_No_UTDID (15.5.0):
     - UTDID
-  - STCPaySDK (1.0.9):
-    - STCPaySDK/ALIPay (= 1.0.9)
-    - STCPaySDK/Core (= 1.0.9)
-    - STCPaySDK/WXPay (= 1.0.9)
-  - STCPaySDK/ALIPay (1.0.9):
+  - STCPaySDK (1.0.12):
+    - STCPaySDK/ALIPay (= 1.0.12)
+    - STCPaySDK/Core (= 1.0.12)
+    - STCPaySDK/WXPay (= 1.0.12)
+  - STCPaySDK/ALIPay (1.0.12):
     - AlipaySDK_No_UTDID
-  - STCPaySDK/Core (1.0.9)
-  - STCPaySDK/WXPay (1.0.9):
+  - STCPaySDK/Core (1.0.12)
+  - STCPaySDK/WXPay (1.0.12):
     - WechatOpenSDK
   - UTDID (1.0.0)
   - WechatOpenSDK (1.8.2)
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AlipaySDK_No_UTDID: dfd49e4e1dc49f2f98a46594653b98098ca9a9eb
-  STCPaySDK: a98379f6bff420034e0952f120d6493aabb1b5e2
+  STCPaySDK: 8d4bdb735109eacd80e22bae909a25361df8cf8e
   UTDID: 05c4737c8cf5c210e86d0235570816ed00e023e8
   WechatOpenSDK: 676feec516a11173eafd1fe64b10d27babf28701
 
