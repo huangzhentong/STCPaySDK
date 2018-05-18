@@ -21,9 +21,7 @@
   "subspecs": [
     {
       "name": "Core",
-      "ios": {
-        "vendored_frameworks": "STCPaySDK/Classes/STCPayCode.framework"
-      },
+      "source_files": "STCPaySDK/Classes/SDK/**/*.{h,m}",
       "frameworks": [
         "CoreGraphics",
         "UIKit",

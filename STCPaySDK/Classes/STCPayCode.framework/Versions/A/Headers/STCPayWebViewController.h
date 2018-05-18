@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 
 //typedef void(^Block)(void);
-//1.0.9
+//1.0.8 2018-05-18-10-33
 @interface STCPayWebViewController : UIViewController
 @property(nonatomic,copy)NSString *url;
 @property(nonatomic,copy)NSString *UA;
