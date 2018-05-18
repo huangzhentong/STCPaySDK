@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'STCPaySDK'
-  s.version          = '1.0.13'
+  s.version          = '1.0.14'
   s.summary          = 'A short description of STCPaySDK.'
 
   s.description      = <<-DESC
@@ -39,20 +39,11 @@ TODO: Add long description of the pod here.
     
     
     s.subspec 'WXPay' do|ss|
-        #ss.vendored_libraries = 'STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a'
-        #ss.libraries             = 'z', 'c++', 'sqlite3'
-        #ss.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
-        ss.source_files = 'STCPaySDK/Classes/WeixinApiManager/*.{h,m}'
-        #ss.preserve_paths = "STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a"
         ss.dependency 'WechatOpenSDK'
+        ss.source_files = 'STCPaySDK/Classes/WeixinApiManager/**/*.{h,m}'
     end
     s.subspec 'ALIPay' do|ss|
-        #ss.vendored_libraries = 'STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a'
-        #ss.libraries             = 'z', 'c++', 'sqlite3'
-        #ss.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
-        #ss.source_files = 'STCPaySDK/Classes/WeixinApiManager/*.{h,m}'
-        #ss.preserve_paths = "STCPaySDK/Classes/ThirdSDK/WechatSDK1.8.2/libWeChatSDK.a"
-        ss.dependency 'AlipaySDK_No_UTDID'
+    ss.dependency 'AlipaySDK_No_UTDID'
     end
 
     
