@@ -7,8 +7,8 @@
 //
 
 #import "STCAppDelegate.h"
-#import <STCPaySDK/STCPayManager.h>
-//#import <STCPayCode/STCPayManager.h>
+//#import <STCPaySDK/STCPayManager.h>
+#import <STCPayCode/STCPayManager.h>
 @implementation STCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
