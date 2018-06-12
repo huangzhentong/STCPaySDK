@@ -9,8 +9,8 @@
 #import "STCViewController.h"
 //#import <STCPaySDK/STCPayManager.h>
 //#import <STCPaySDK/STCPaySDK/STCPayManager.h>
-//#import <STCPaySDK/STCPayManager.h>
-#import <STCPayCode/STCPayManager.h>
+#import <STCPaySDK/STCPayManager.h>
+//#import <STCPayCode/STCPayManager.h>
 @interface STCViewController ()
 {
     UIImageView *imageView;
@@ -38,11 +38,20 @@
 }
 - (IBAction)buttonEvent:(id)sender {
     NSString *string = @"";
-    string = @"";
-    [STCPayManager openPayViewController:string withViewController:self];
+    string = @"http://ts.keytop.cn/wxpay_test/page/payment/confirm/payment_access_order.html?p=0851201806121813041169";
+    
+    STCPayWebViewController * viewController = [STCPayManager payViewController:string withBlock:nil];
+//    viewController.UA = @"";
+    UINavigationController *navi = [self getNavigation:viewController];
+    [self presentViewController:navi animated:YES completion:nil];
+//    [STCPayManager openPayViewController:string withViewController:self];
 }
 
-
+-(UINavigationController*)getNavigation:(UIViewController*)vc
+{
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+    return navi;
+}
 
 - (void)didReceiveMemoryWarning
 {
