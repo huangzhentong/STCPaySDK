@@ -11,10 +11,11 @@ extern NSString * const STCPaySuccessNotification;                  //支付成�
 extern NSString * const STCPayFaieldNotification;                   //支付失败通知
 @interface STCPayManager : NSObject
 @property(nonatomic,copy)NSString *aliPayScheme;
+@property(nonatomic,copy)NSString *h5Scheme;                        //使用h5支付的时候需要设置
 +(instancetype)shareInstance;
 //如果需要支付宝支付请到 info.plist 添加相对应用的 Scheme
 +(void)setAliPayScheme:(NSString*)appScheme;
-
++(void)setH5Scheme:(NSString*)scheme;
 
 //返回一个ViewController  block为返回事件 不需要返回事件的可传nil
 +(STCPayWebViewController*)payViewController:(NSString *)url withBlock:(void(^)(BOOL isPaySuccess))block;
